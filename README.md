@@ -5,6 +5,9 @@
 [![License](https://img.shields.io/cocoapods/l/LiquidLoader.svg?style=flat)](http://cocoapods.org/pods/LiquidLoader)
 [![Platform](https://img.shields.io/cocoapods/p/LiquidLoader.svg?style=flat)](http://cocoapods.org/pods/LiquidLoader)
 
+![GrowCircle](https://raw.githubusercontent.com/yoavlt/LiquidLoader/master/Demo/grow-circle.gif)
+![GrowLine](https://raw.githubusercontent.com/yoavlt/LiquidLoader/master/Demo/grow-line.gif)
+
 ## Usage
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
