@@ -8,5 +8,5 @@ before_script:
     - pod install
 
 xcode_workspace: LiquidLoader.xcworkspace
-xcode_scheme: LiquidLoaderExample
+xcode_scheme: LiquidLoader-Example
 xcode_sdk: iphonesimulator8.4
