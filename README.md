@@ -5,6 +5,8 @@ LiquidLoader is the loader UI components with liquid animation, inspired by [Spi
 [![Version](https://img.shields.io/cocoapods/v/LiquidLoader.svg?style=flat)](http://cocoapods.org/pods/LiquidLoader)
 [![License](https://img.shields.io/cocoapods/l/LiquidLoader.svg?style=flat)](http://cocoapods.org/pods/LiquidLoader)
 [![Platform](https://img.shields.io/cocoapods/p/LiquidLoader.svg?style=flat)](http://cocoapods.org/pods/LiquidLoader)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)]
+(https://github.com/Carthage/Carthage)
 
 ## GrowCircle
 ![GrowCircle](https://github.com/yoavlt/LiquidLoader/blob/master/Demo/grow-circle.gif?raw=true)
@@ -43,6 +45,12 @@ it, simply add the following line to your Podfile:
 
 ```ruby
 pod "LiquidLoader"
+```
+
+or, if you use [Carthage](https://github.com/Carthage/Carthage), add the following line to your `Carthage` file.
+
+```
+github "yoavlt/LiquidLoader"
 ```
 
 ## License
