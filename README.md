@@ -5,8 +5,8 @@
 [![License](https://img.shields.io/cocoapods/l/LiquidLoader.svg?style=flat)](http://cocoapods.org/pods/LiquidLoader)
 [![Platform](https://img.shields.io/cocoapods/p/LiquidLoader.svg?style=flat)](http://cocoapods.org/pods/LiquidLoader)
 
-![GrowCircle](https://raw.githubusercontent.com/yoavlt/LiquidLoader/master/Demo/grow-circle.gif)
-![GrowLine](https://raw.githubusercontent.com/yoavlt/LiquidLoader/master/Demo/grow-line.gif)
+![GrowCircle](https://github.com/yoavlt/LiquidLoader/blob/master/Demo/grow-circle.gif?raw=true)
+![GrowLine](https://github.com/yoavlt/LiquidLoader/blob/master/Demo/grow-line.gif?raw=true)
 
 ## Usage
 
