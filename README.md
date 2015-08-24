@@ -24,6 +24,8 @@ view.addSubview(loader)
 
 ### Show/Hide
 
+You can show and hide a loader.
+
 ```swift:
 loader.show()
 loader.hide()
