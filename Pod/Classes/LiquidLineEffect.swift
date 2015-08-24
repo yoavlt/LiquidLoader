@@ -25,10 +25,14 @@ class LiquidLineEffect : LiquidLoadEffect {
     }
 
     override func movePosition(key: CGFloat) -> CGPoint {
-        return CGPoint(
-            x: loader.frame.width * sineTransform(key),
-            y: loader.frame.height * 0.5
-        )
+        if loader != nil {
+            return CGPoint(
+                x: loader.frame.width * sineTransform(key),
+                y: loader.frame.height * 0.5
+            )
+        } else {
+            return CGPointZero
+        }
     }
 
     func sineTransform(key: CGFloat) -> CGFloat {
