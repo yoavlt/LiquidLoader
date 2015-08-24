@@ -1,0 +1,25 @@
+{
+  "name": "LiquidLoader",
+  "version": "0.1.0",
+  "summary": "A short description of LiquidLoader.",
+  "description": "",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/LiquidLoader",
+  "license": "MIT",
+  "authors": {
+    "Takuma Yoshida": "yoa.jmpr.w@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/LiquidLoader.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "LiquidLoader": [
+      "Pod/Assets/*.png"
+    ]
+  }
+}

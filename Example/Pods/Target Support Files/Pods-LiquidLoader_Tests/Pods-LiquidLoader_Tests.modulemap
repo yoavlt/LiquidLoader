@@ -1,0 +1,6 @@
+framework module Pods_LiquidLoader_Tests {
+  umbrella header "Pods-LiquidLoader_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

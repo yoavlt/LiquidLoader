@@ -1,0 +1,6 @@
+framework module LiquidLoader {
+  umbrella header "LiquidLoader-umbrella.h"
+
+  export *
+  module * { export * }
+}
