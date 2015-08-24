@@ -34,7 +34,7 @@ You can use the following effects.
 * .Circle
 * .Line
 
-If you avoid grow effect, you should use `.Circle` and `.Line`.
+If you want to avoid grow effects, you should use `.Circle` or `.Line`.
 
 ## Installation
 
