@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'LiquidLoader_Example', :exclusive => true do
+  pod "LiquidLoader", :path => "../"
+end
+
+target 'LiquidLoader_Tests', :exclusive => true do
+  pod "LiquidLoader", :path => "../"
+
+  
+end
