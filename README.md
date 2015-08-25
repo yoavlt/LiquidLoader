@@ -1,5 +1,5 @@
 # LiquidLoader
-LiquidLoader is the loader UI components with liquid animation, inspired by [Spinner Loader - Gooey light Effect](http://www.materialup.com/posts/spinner-loader-gooey-light-effect)
+LiquidLoader is the spinner loader UI components with liquid animation, inspired by [Spinner Loader - Gooey light Effect](http://www.materialup.com/posts/spinner-loader-gooey-light-effect)
 
 [![CI Status](http://img.shields.io/travis/yoavlt/LiquidLoader.svg?style=flat)](https://travis-ci.org/yoavlt/LiquidLoader)
 [![Version](https://img.shields.io/cocoapods/v/LiquidLoader.svg?style=flat)](http://cocoapods.org/pods/LiquidLoader)
