@@ -17,7 +17,7 @@ LiquidLoader is the loader UI components with liquid animation, inspired by [Spi
 
 ## Usage
 
-```swift:
+```swift
 let loader = LiquidLoader(frame: loaderFrame, effect: .GrowCircle(circleColor))
 view.addSubview(loader)
 ```
@@ -26,7 +26,7 @@ view.addSubview(loader)
 
 You can show and hide a loader.
 
-```swift:
+```swift
 loader.show()
 loader.hide()
 ```
