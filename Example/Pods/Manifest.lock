@@ -1,5 +1,5 @@
 PODS:
-  - LiquidLoader (0.1.0)
+  - LiquidLoader (0.1.1)
 
 DEPENDENCIES:
   - LiquidLoader (from `../`)
@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  LiquidLoader: 0a76d1e8b6d24a8128b7bd570e0d16534e46f0b3
+  LiquidLoader: cf49954a6643f610c06a7db45da2da81a68a154b
 
 COCOAPODS: 0.38.2
