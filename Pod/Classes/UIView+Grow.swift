@@ -29,7 +29,6 @@ extension UIView {
     
     func growShadow(radius: CGFloat, growColor: UIColor, shininess: CGFloat) {
         let origin = self.center.minus(self.frame.origin).minus(CGPoint(x: radius * shininess, y: radius * shininess))
-        println(origin)
         let ovalRect = CGRect(origin: origin, size: CGSize(width: 2 * radius * shininess, height: 2 * radius * shininess))
         let shadowPath = UIBezierPath(ovalInRect: ovalRect)
         self.layer.shadowColor = growColor.CGColor
