@@ -43,7 +43,7 @@ public class LiquidLoader : UIView {
         self.effectDelegate = self.effect.setup(self)
     }
 
-    public required init(coder aDecoder: NSCoder) {
+    public required init?(coder aDecoder: NSCoder) {
         self.effect = .Circle(UIColor.whiteColor())
         super.init(coder: aDecoder)
         self.effectDelegate = self.effect.setup(self)
