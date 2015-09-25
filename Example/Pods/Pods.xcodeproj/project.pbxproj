@@ -26,6 +26,7 @@
 		A1713770691C4C5EA7CA28ECB27A549B /* SimpleCircleLiquidEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1177A1DFFF9CAC0E8146CDC6BC6081D9 /* SimpleCircleLiquidEngine.swift */; };
 		A52E08E90404F57BDAFC60A8B3C30226 /* LiquidLoader.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 149C086101C346E76F4F70BB5BBFDBB3 /* LiquidLoader.bundle */; };
 		B3BFB99B755649013BBB0E1C24AA2822 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FA3EBB624C305CAA580662C1D1A4517 /* Foundation.framework */; };
+		B9FB6DAC1BB4EF4F00679F32 /* ObjC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FB6DAB1BB4EF4F00679F32 /* ObjC.swift */; settings = {ASSET_TAGS = (); }; };
 		CB9306CA0073EE736AEE6EF0CB80F872 /* LiquidLineEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D32E33415D84FEAFA5265A68C838F70 /* LiquidLineEffect.swift */; };
 		D3AC9F9A15718D6CBF8F97512D646E04 /* LiquidLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64934E40C532CCD23F57ACC8671AD84 /* LiquidLoader.swift */; };
 		F799B3B99DA9DA6C9E4136E1C808CF47 /* UIColorEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609956BD318F1ED074DD11553527204B /* UIColorEx.swift */; };
@@ -93,6 +94,7 @@
 		A64934E40C532CCD23F57ACC8671AD84 /* LiquidLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LiquidLoader.swift; sourceTree = "<group>"; };
 		B3FD2022636FC815082E8FDF87276877 /* Pods-LiquidLoader_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LiquidLoader_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		B5CB0F9EB7805E30638C9D53074FD986 /* Pods-LiquidLoader_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LiquidLoader_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		B9FB6DAB1BB4EF4F00679F32 /* ObjC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjC.swift; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BB2AF31580127AEEB9923E1BEE3B62CE /* LiquidLoader-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "LiquidLoader-Private.xcconfig"; sourceTree = "<group>"; };
 		BFC56510003F209BBF2148A4AF1D6E11 /* LiquidLoader-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LiquidLoader-dummy.m"; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 				A63D2E4F97DB67E90CDD31CEAEC7C1D6 /* CGRectEx.swift */,
 				38B7510FE43B6D43621AF301D974E30C /* CircularGradientLayer.swift */,
 				71D872C135AD295D0AE0576F4A0B8175 /* LiquidCircleEffect.swift */,
+				B9FB6DAB1BB4EF4F00679F32 /* ObjC.swift */,
 				5D32E33415D84FEAFA5265A68C838F70 /* LiquidLineEffect.swift */,
 				2AA75925B9EFD9FB58DA97EEFC8DECA7 /* LiquidLoadEffect.swift */,
 				A64934E40C532CCD23F57ACC8671AD84 /* LiquidLoader.swift */,
@@ -465,6 +468,7 @@
 				3FC6AB5DB3C462E20FB46F424D0D9DCB /* ArrayEx.swift in Sources */,
 				2775773C8DD476BB79D2528F8FC9419B /* CGPointEx.swift in Sources */,
 				86877FB8C8F6813FBCA11CDA94580B9B /* CGRectEx.swift in Sources */,
+				B9FB6DAC1BB4EF4F00679F32 /* ObjC.swift in Sources */,
 				38765F96D3A29F72E81967C9041692EB /* CircularGradientLayer.swift in Sources */,
 				344160681E23B9240BA27606C05CE673 /* LiquidCircleEffect.swift in Sources */,
 				CB9306CA0073EE736AEE6EF0CB80F872 /* LiquidLineEffect.swift in Sources */,
