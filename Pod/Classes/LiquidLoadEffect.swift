@@ -18,6 +18,8 @@ class LiquidLoadEffect : NSObject {
     var engine: SimpleCircleLiquidEngine?
     var moveCircle: LiquittableCircle?
     var shadowCircle: LiquittableCircle?
+    
+    var timer: NSTimer?
 
     weak var loader: LiquidLoader!
     
@@ -63,7 +65,7 @@ class LiquidLoadEffect : NSObject {
         }
         resize()
 
-        var timer = NSTimer.scheduledTimerWithTimeInterval(0.02, target: self, selector: Selector("update"), userInfo: nil, repeats: true)
+        timer = NSTimer.scheduledTimerWithTimeInterval(0.02, target: self, selector: Selector("update"), userInfo: nil, repeats: true)
     }
     
     func updateKeyframe(key: CGFloat) {
@@ -116,4 +118,7 @@ class LiquidLoadEffect : NSObject {
         }
     }
 
+    func stopTimer() {
+        timer?.invalidate()
+    }
 }
