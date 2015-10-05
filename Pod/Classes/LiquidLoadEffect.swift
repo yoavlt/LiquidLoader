@@ -19,7 +19,7 @@ class LiquidLoadEffect : NSObject {
     var moveCircle: LiquittableCircle?
     var shadowCircle: LiquittableCircle?
     
-    var timer: NSTimer?
+    var timer:  CADisplayLink?
 
     weak var loader: LiquidLoader!
     
@@ -65,7 +65,8 @@ class LiquidLoadEffect : NSObject {
         }
         resize()
 
-        timer = NSTimer.scheduledTimerWithTimeInterval(0.02, target: self, selector: Selector("update"), userInfo: nil, repeats: true)
+        timer = CADisplayLink(target: self, selector: "update")
+        timer?.addToRunLoop(NSRunLoop.mainRunLoop(), forMode: NSRunLoopCommonModes)
     }
     
     func updateKeyframe(key: CGFloat) {
