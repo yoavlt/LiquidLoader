@@ -56,4 +56,12 @@ public class LiquidLoader : UIView {
     public func hide() {
         self.hidden = true
     }
+    
+    override public func didMoveToWindow() {
+        super.didMoveToWindow()
+        if(self.window == nil) {
+            // we were removed.. lets stop everything
+            effectDelegate?.stopTimer()
+        }
+    }
 }
