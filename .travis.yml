@@ -9,4 +9,4 @@ before_script:
 
 xcode_workspace: LiquidLoader.xcworkspace
 xcode_scheme: LiquidLoader-Example
-xcode_sdk: iphonesimulator8.4
+xcode_sdk: iphonesimulator9.0
