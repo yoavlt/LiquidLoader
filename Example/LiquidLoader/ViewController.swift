@@ -37,7 +37,7 @@ class ViewController: UIViewController {
         view.addSubview(lineLoader)
         view.addSubview(circleLoader)
         view.addSubview(circleMat)
-//        view.addSubview(lineMat)
+        view.addSubview(lineMat)
     }
 
     override func didReceiveMemoryWarning() {
