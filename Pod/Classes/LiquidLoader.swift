@@ -10,27 +10,28 @@ import Foundation
 import UIKit
 
 public enum Effect {
-    case Line(UIColor)
-    case Circle(UIColor)
-    case GrowLine(UIColor)
-    case GrowCircle(UIColor)
+    case Line(UIColor,Int,CGFloat)
+    case Circle(UIColor,Int,CGFloat)
+    case GrowLine(UIColor,Int,CGFloat)
+    case GrowCircle(UIColor,Int,CGFloat)
     
     func setup(loader: LiquidLoader) -> LiquidLoadEffect {
         switch self {
-        case .Line(let color):
-            return LiquidLineEffect(loader: loader, color: color)
-        case .Circle(let color):
-            return LiquidCircleEffect(loader: loader, color: color)
-        case .GrowLine(let color):
-            let line = LiquidLineEffect(loader: loader, color: color)
+        case .Line(let color, let count, let duration):
+            return LiquidLineEffect(loader: loader, color: color, circleCount: count, duration: duration)
+        case .Circle(let color, let count, let duration):
+            return LiquidCircleEffect(loader: loader, color: color, circleCount: count, duration: duration)
+        case .GrowLine(let color, let count, let duration):
+            let line = LiquidLineEffect(loader: loader, color: color, circleCount: count, duration: duration)
             line.isGrow = true
             return line
-        case .GrowCircle(let color):
-            let circle = LiquidCircleEffect(loader: loader, color: color)
+        case .GrowCircle(let color,let count, let duration):
+            let circle = LiquidCircleEffect(loader: loader, color: color, circleCount: count, duration: duration)
             circle.isGrow = true
             return circle
         }
     }
+
 }
 
 public class LiquidLoader : UIView {
@@ -44,7 +45,7 @@ public class LiquidLoader : UIView {
     }
 
     public required init?(coder aDecoder: NSCoder) {
-        self.effect = .Circle(UIColor.whiteColor())
+        self.effect = .Circle(UIColor.whiteColor(), 5, 3.0)
         super.init(coder: aDecoder)
         self.effectDelegate = self.effect.setup(self)
     }
