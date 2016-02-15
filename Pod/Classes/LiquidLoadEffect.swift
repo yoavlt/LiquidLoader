@@ -14,6 +14,7 @@ class LiquidLoadEffect : NSObject {
     var circleScale: CGFloat = 1.17
     var moveScale: CGFloat = 0.80
     var color = UIColor.whiteColor()
+    var growColor = UIColor.redColor()
 
     var engine: SimpleCircleLiquidEngine?
     var moveCircle: LiquittableCircle?
@@ -39,10 +40,13 @@ class LiquidLoadEffect : NSObject {
         }
     }
 
-    init(loader: LiquidLoader, color: UIColor) {
+    init(loader: LiquidLoader, color: UIColor, growColor: UIColor? = UIColor.redColor()) {
         self.circleRadius = loader.frame.width * 0.05
         self.loader = loader
         self.color = color
+        if growColor != nil {
+            self.growColor = growColor!
+        }
         super.init()
         setup()
     }
@@ -111,7 +115,7 @@ class LiquidLoadEffect : NSObject {
     
     func grow(isGrow: Bool) {
         if isGrow {
-            shadowCircle = LiquittableCircle(center: self.moveCircle!.center, radius: self.moveCircle!.radius * 1.0, color: self.color)
+            shadowCircle = LiquittableCircle(center: self.moveCircle!.center, radius: self.moveCircle!.radius * 1.0, color: self.color, growColor: growColor)
             shadowCircle?.isGrow = isGrow
             loader?.addSubview(shadowCircle!)
         } else {

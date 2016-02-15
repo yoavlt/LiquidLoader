@@ -18,8 +18,8 @@ class LiquidCircleEffect : LiquidLoadEffect {
     }
     let NumberOfCircles = 8
 
-    internal override init(loader: LiquidLoader, color: UIColor) {
-        super.init(loader: loader, color: color)
+    internal override init(loader: LiquidLoader, color: UIColor, growColor: UIColor? = UIColor.redColor()) {
+        super.init(loader: loader, color: color, growColor: growColor)
     }
 
     override func setupShape() -> [LiquittableCircle] {
@@ -30,7 +30,8 @@ class LiquidCircleEffect : LiquidLoadEffect {
             return LiquittableCircle(
                 center: center,
                 radius: self.circleRadius,
-                color: self.color
+                color: self.color,
+                growColor: self.growColor
             )
         }
     }
@@ -60,7 +61,7 @@ class LiquidCircleEffect : LiquidLoadEffect {
         self.circleScale = 1.10
         self.engine = SimpleCircleLiquidEngine(radiusThresh: self.circleRadius * 0.85, angleThresh: 0.5)
         let moveCircleRadius = circleRadius * moveScale
-        moveCircle = LiquittableCircle(center: movePosition(0.0), radius: moveCircleRadius, color: self.color)
+        moveCircle = LiquittableCircle(center: movePosition(0.0), radius: moveCircleRadius, color: self.color, growColor: self.growColor)
     }
 
     override func resize() {
