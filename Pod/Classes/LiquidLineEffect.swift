@@ -11,11 +11,10 @@ import UIKit
 
 class LiquidLineEffect : LiquidLoadEffect {
 
-    let NumberOfCircles = 5
     var circleInter: CGFloat!
 
     override func setupShape() -> [LiquittableCircle] {
-        return Array(0..<NumberOfCircles).map { i in
+        return Array(0..<numberOfCircles).map { i in
             return LiquittableCircle(
                 center: CGPoint(x: self.circleInter + self.circleRadius + CGFloat(i) * (self.circleInter + 2 * self.circleRadius), y: self.loader.frame.height * 0.5),
                 radius: self.circleRadius,
@@ -28,7 +27,7 @@ class LiquidLineEffect : LiquidLoadEffect {
     override func movePosition(key: CGFloat) -> CGPoint {
         if loader != nil {
             return CGPoint(
-                x: loader.frame.width * sineTransform(key),
+                x:  (circles.last!.frame.rightBottom.x + circleInter)  * sineTransform(key),
                 y: loader.frame.height * 0.5
             )
         } else {
@@ -43,7 +42,7 @@ class LiquidLineEffect : LiquidLoadEffect {
     override func update() {
         switch key {
         case 0.0...2.0:
-            key += 0.01
+            key += 2.0/(duration*60)
         default:
             key = 0.0
         }

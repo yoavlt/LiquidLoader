@@ -15,15 +15,9 @@ class LiquidCircleEffect : LiquidLoadEffect {
         get {
             return loader!.frame.width * 0.5
         }
-    }
-    let NumberOfCircles = 8
-
-    internal override init(loader: LiquidLoader, color: UIColor, growColor: UIColor? = UIColor.redColor()) {
-        super.init(loader: loader, color: color, growColor: growColor)
-    }
-
+    
     override func setupShape() -> [LiquittableCircle] {
-        return Array(0..<NumberOfCircles).map { i in
+        return Array(0..<numberOfCircles).map { i in
             let angle = CGFloat(i) * CGFloat(2 * M_PI) / 8.0
             let frame = self.loader.frame
             let center = CGMath.circlePoint(frame.center.minus(frame.origin), radius: self.radius - self.circleRadius, rad: angle)
@@ -50,7 +44,7 @@ class LiquidCircleEffect : LiquidLoadEffect {
     override func update() {
         switch key {
         case 0.0...1.0:
-            key += 0.006
+            key += 1/(duration*60)
         default:
             key = key - 1.0
         }
