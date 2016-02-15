@@ -42,7 +42,7 @@ class LiquidLoadEffect : NSObject {
         }
     }
 
-    init(loader: LiquidLoader, color: UIColor, growColor: UIColor? = UIColor.redColor(), circleCount: Int, duration: CGFloat) {
+    init(loader: LiquidLoader, color: UIColor, circleCount: Int, duration: CGFloat, growColor: UIColor? = UIColor.redColor()) {
         self.numberOfCircles = circleCount
         self.duration = duration
         self.circleRadius = loader.frame.width * 0.05
