@@ -15,6 +15,7 @@ class LiquidCircleEffect : LiquidLoadEffect {
         get {
             return loader!.frame.width * 0.5
         }
+    }
     
     override func setupShape() -> [LiquittableCircle] {
         return Array(0..<numberOfCircles).map { i in
