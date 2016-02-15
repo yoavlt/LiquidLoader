@@ -18,17 +18,17 @@ import UIKit
 
 extension LiquidLoader {
     
-    @objc public convenience init(frame: CGRect, effect: ObjCEffect, color: UIColor) {
+    @objc public convenience init(frame: CGRect, effect: ObjCEffect, color: UIColor, numberOfCircle: Int, duration: CGFloat) {
         var s: Effect
         
         if effect == .Line {
-            s = Effect.Line(color)
+            s = Effect.Line(color, numberOfCircle, duration)
         } else if effect == .Circle {
-            s = Effect.Circle(color)
+            s = Effect.Circle(color, numberOfCircle, duration)
         } else if effect == .GrowLine {
-            s = Effect.GrowLine(color)
+            s = Effect.GrowLine(color, numberOfCircle, duration)
         } else { //if effect == .GrowCircle {
-            s = Effect.GrowCircle(color)
+            s = Effect.GrowCircle(color, numberOfCircle, duration)
         }
         
         self.init(frame: frame, effect: s)
