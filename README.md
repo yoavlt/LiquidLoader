@@ -18,7 +18,7 @@ LiquidLoader is the spinner loader UI components with liquid animation, inspired
 ## Usage
 
 ```swift
-let loader = LiquidLoader(frame: loaderFrame, effect: .GrowCircle(circleColor, 10, 1.0)) //color, number of circles, duration.
+let loader = LiquidLoader(frame: loaderFrame, effect: .GrowCircle(circleColor, 10, 1.0, , growColor)) //color, number of circles, duration, growColor.
 view.addSubview(loader)
 ```
 

@@ -10,23 +10,23 @@ import Foundation
 import UIKit
 
 public enum Effect {
-    case Line(UIColor,Int,CGFloat)
-    case Circle(UIColor,Int,CGFloat)
-    case GrowLine(UIColor,Int,CGFloat)
-    case GrowCircle(UIColor,Int,CGFloat)
+    case Line(UIColor, Int, CGFloat, UIColor?)
+    case Circle(UIColor, Int, CGFloat, UIColor?)
+    case GrowLine(UIColor, Int, CGFloat, UIColor?)
+    case GrowCircle(UIColor, Int, CGFloat, UIColor?)
     
     func setup(loader: LiquidLoader) -> LiquidLoadEffect {
         switch self {
-        case .Line(let color, let count, let duration):
-            return LiquidLineEffect(loader: loader, color: color, circleCount: count, duration: duration)
-        case .Circle(let color, let count, let duration):
-            return LiquidCircleEffect(loader: loader, color: color, circleCount: count, duration: duration)
-        case .GrowLine(let color, let count, let duration):
-            let line = LiquidLineEffect(loader: loader, color: color, circleCount: count, duration: duration)
+        case .Line(let color, let count, let duration, let growColor):
+            return LiquidLineEffect(loader: loader, color: color, circleCount: count, duration: duration, growColor: growColor)
+        case .Circle(let color, let count, let duration, let growColor):
+            return LiquidCircleEffect(loader: loader, color: color, circleCount: count, duration: duration, growColor: growColor)
+        case .GrowLine(let color, let count, let duration, let growColor):
+            let line = LiquidLineEffect(loader: loader, color: color, circleCount: count, duration: duration, growColor: growColor)
             line.isGrow = true
             return line
-        case .GrowCircle(let color,let count, let duration):
-            let circle = LiquidCircleEffect(loader: loader, color: color, circleCount: count, duration: duration)
+        case .GrowCircle(let color,let count, let duration, let growColor):
+            let circle = LiquidCircleEffect(loader: loader, color: color, circleCount: count, duration: duration, growColor: growColor)
             circle.isGrow = true
             return circle
         }
@@ -45,7 +45,7 @@ public class LiquidLoader : UIView {
     }
 
     public required init?(coder aDecoder: NSCoder) {
-        self.effect = .Circle(UIColor.whiteColor(), 5, 3.0)
+        self.effect = .Circle(UIColor.whiteColor(), 5, 3.0, UIColor.redColor())
         super.init(coder: aDecoder)
         self.effectDelegate = self.effect.setup(self)
     }

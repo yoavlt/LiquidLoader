@@ -18,7 +18,8 @@ class LiquidLineEffect : LiquidLoadEffect {
             return LiquittableCircle(
                 center: CGPoint(x: self.circleInter + self.circleRadius + CGFloat(i) * (self.circleInter + 2 * self.circleRadius), y: self.loader.frame.height * 0.5),
                 radius: self.circleRadius,
-                color: self.color
+                color: self.color,
+                growColor: self.growColor
             )
         }
     }
@@ -54,7 +55,7 @@ class LiquidLineEffect : LiquidLoadEffect {
         self.circleInter = (loader.frame.width - 2 * circleRadius * 5) / 6
         self.engine = SimpleCircleLiquidEngine(radiusThresh: self.circleRadius, angleThresh: 0.2)
         let moveCircleRadius = circleRadius * moveScale
-        self.moveCircle = LiquittableCircle(center: CGPoint(x: 0, y: loader.frame.height * 0.5), radius: moveCircleRadius, color: color)
+        self.moveCircle = LiquittableCircle(center: CGPoint(x: 0, y: loader.frame.height * 0.5), radius: moveCircleRadius, color: color, growColor: growColor)
     }
     
     override func resize() {
