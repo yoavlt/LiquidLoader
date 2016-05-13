@@ -10,3 +10,4 @@ before_script:
 xcode_workspace: LiquidLoader.xcworkspace
 xcode_scheme: LiquidLoader-Example
 xcode_sdk: iphonesimulator9.3
+script: set -o pipefail
