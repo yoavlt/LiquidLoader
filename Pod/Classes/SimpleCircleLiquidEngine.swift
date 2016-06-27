@@ -113,22 +113,18 @@ class SimpleCircleLiquidEngine {
         let (p3, p4) = circleConnectedPoint(other, other: circle, angle: CGMath.degToRad(40))
 
         if let crossed = CGPoint.intersection(p1, to: p3, from2: p2, to2: p4) {
-            let (d1, _d1) = self.circleConnectedPoint(circle, other: other, angle: 0)
-            let (d2, _d2) = self.circleConnectedPoint(other, other: circle, angle: 0)
+            let (d1, _) = self.circleConnectedPoint(circle, other: other, angle: 0)
+            let (d2, _) = self.circleConnectedPoint(other, other: circle, angle: 0)
             let r = (ratio - ConnectThresh) / (angleThresh - ConnectThresh)
 
             let a1 = d1.split(crossed.mid(d2), ratio: 1 - r)
             let part = withBezier { path in
                 path.moveToPoint(p1)
-                let cp1 = a1.split(p1, ratio: ratio)
-                let cp2 = a1.split(p2, ratio: ratio)
                 path.addQuadCurveToPoint(p2, controlPoint: a1)
             }
             let a2 = d2.split(crossed.mid(d1), ratio: 1 - r)
             let part2 = withBezier { path in
                 path.moveToPoint(p3)
-                let cp1 = a2.split(p3, ratio: ratio)
-                let cp2 = a2.split(p4, ratio: ratio)
                 path.addQuadCurveToPoint(p4, controlPoint: a2)
             }
             return [part, part2]

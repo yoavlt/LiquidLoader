@@ -11,14 +11,14 @@ import UIKit
 
 extension UIView {
     func grow(baseColor: UIColor, radius: CGFloat, shininess: CGFloat) {
-        let growColor = UIColor(red: 0 / 255.0, green: 1, blue: 1, alpha: 1.0)
+        let growColor = baseColor//UIColor(red: 0 / 255.0, green: 1, blue: 1, alpha: 1.0)
         growShadow(radius, growColor: growColor, shininess: shininess)
         let circle = CAShapeLayer()
         circle.path = UIBezierPath(ovalInRect: CGRect(x: 0, y: 0, width: radius * 2.0, height: radius * 2.0)).CGPath
         let circleGradient = CircularGradientLayer(colors: [growColor, UIColor(white: 1.0, alpha: 0)])
         circleGradient.frame = CGRect(x: 0, y: 0, width: radius * 2.0, height: radius * 2.0)
         circleGradient.opacity = 0.25
-        for sub in layer.sublayers {
+        for sub in layer.sublayers! {
             if let l = sub as? CAShapeLayer {
                 l.fillColor = UIColor.clearColor().CGColor
             }

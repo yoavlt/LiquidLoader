@@ -16,26 +16,24 @@ class LiquidCircleEffect : LiquidLoadEffect {
             return loader!.frame.width * 0.5
         }
     }
-    let NumberOfCircles = 8
-
-    internal override init(loader: LiquidLoader, color: UIColor) {
-        super.init(loader: loader, color: color)
-    }
-
+    
     override func setupShape() -> [LiquittableCircle] {
-        return Array(0..<NumberOfCircles).map { i in
+        return Array(0..<numberOfCircles).map { i in
             let angle = CGFloat(i) * CGFloat(2 * M_PI) / 8.0
             let frame = self.loader.frame
             let center = CGMath.circlePoint(frame.center.minus(frame.origin), radius: self.radius - self.circleRadius, rad: angle)
             return LiquittableCircle(
                 center: center,
                 radius: self.circleRadius,
-                color: self.color
+                color: self.color,
+                growColor: self.growColor
             )
         }
     }
 
     override func movePosition(key: CGFloat) -> CGPoint {
+        guard self.loader != nil else {return CGPointZero}
+        
         let frame = self.loader!.frame.center.minus(self.loader!.frame.origin)
         return CGMath.circlePoint(
             frame,
@@ -47,7 +45,7 @@ class LiquidCircleEffect : LiquidLoadEffect {
     override func update() {
         switch key {
         case 0.0...1.0:
-            key += 0.006
+            key += 1/(duration*60)
         default:
             key = key - 1.0
         }
@@ -58,10 +56,13 @@ class LiquidCircleEffect : LiquidLoadEffect {
         self.circleScale = 1.10
         self.engine = SimpleCircleLiquidEngine(radiusThresh: self.circleRadius * 0.85, angleThresh: 0.5)
         let moveCircleRadius = circleRadius * moveScale
-        moveCircle = LiquittableCircle(center: movePosition(0.0), radius: moveCircleRadius, color: self.color)
+        moveCircle = LiquittableCircle(center: movePosition(0.0), radius: moveCircleRadius, color: self.color, growColor: self.growColor)
     }
 
     override func resize() {
+        guard moveCircle != nil else { return }
+        guard loader != nil else { return }
+        
         let moveVec = moveCircle!.center.minus(loader.center.minus(loader.frame.origin)).normalized()
         circles.map { circle in
             return (circle, moveVec.dot(circle.center.minus(self.loader.center.minus(self.loader.frame.origin)).normalized()))

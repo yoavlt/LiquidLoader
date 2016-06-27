@@ -23,16 +23,20 @@ class LiquittableCircle : UIView {
         }
     }
     var color: UIColor = UIColor.redColor()
+    var growColor: UIColor = UIColor.whiteColor()
 
-    init(center: CGPoint, radius: CGFloat, color: UIColor) {
+    init(center: CGPoint, radius: CGFloat, color: UIColor, growColor: UIColor?) {
         let frame = CGRect(x: center.x - radius, y: center.y - radius, width: 2 * radius, height: 2 * radius)
         self.radius = radius
         self.color = color
+        if growColor != nil {
+            self.growColor = growColor!
+        }
         super.init(frame: frame)
         setup()
     }
 
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
@@ -61,7 +65,7 @@ class LiquittableCircle : UIView {
     
     func grow(isGrow: Bool) {
         if isGrow {
-            grow(self.color, radius: self.radius, shininess: 1.6)
+            grow(self.growColor, radius: self.radius, shininess: 1.6)
         } else {
             self.layer.shadowRadius = 0
             self.layer.shadowOpacity = 0
