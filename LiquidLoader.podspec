@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "LiquidLoader"
-  s.version          = "0.1.1"
+  s.version          = "1.2.0"
   s.summary          = "Loader UI components with liquid animation"
 
 # This description is used to generate tags and improve search results.
