@@ -1,5 +1,5 @@
 PODS:
-  - LiquidLoader (0.1.1)
+  - LiquidLoader (1.2.1)
 
 DEPENDENCIES:
   - LiquidLoader (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  LiquidLoader: cf49954a6643f610c06a7db45da2da81a68a154b
+  LiquidLoader: 73adf4f43b260ecb9dae807064e566d72c629dfd
 
 PODFILE CHECKSUM: 45161a1a5c5a941a9031074d8a3962f9f4583638
 

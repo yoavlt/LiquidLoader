@@ -7,52 +7,44 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		085005BF1757B44CCB4AF8E0E14AB779 /* SimpleCircleLiquidEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BAD6C2700DF9DDDB6A330915FC2E601 /* SimpleCircleLiquidEngine.swift */; };
 		0CA163551D3496F76C23A61415FDC4EE /* Pods-LiquidLoader_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E6E52F97E257719B3967CC4A8964103 /* Pods-LiquidLoader_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1010135483D04BAA411F05B75B06F902 /* LiquidLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66B06FD202BBEEE3BA2C4C81F68B25E /* LiquidLoader.swift */; };
-		1348B6254310862127C594A0C5917240 /* CGPointEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359A280192518C9D478CE5F2D719DE0B /* CGPointEx.swift */; };
-		18414698CF7CD9731EB330DF8C783FDA /* ObjC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CE139922B5E3BB39C20B70CDD0C461 /* ObjC.swift */; };
+		17906F3011D1B9786DAAC07A35CE0027 /* LiquidCircleEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A216DC6789F243C5558920114930607 /* LiquidCircleEffect.swift */; };
 		20FD442F22264FF0B94D52AE265716DF /* Pods-LiquidLoader_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CB85F05E045BA694107FA1EBD967268F /* Pods-LiquidLoader_Example-dummy.m */; };
+		2662F346FCD13029427E9E4F60692D24 /* LiquidUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494AAB833567E609B1E7F4869A44AFB1 /* LiquidUtil.swift */; };
 		279D138255F4E9322AF803C6795D1F2A /* Pods-LiquidLoader_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AE358E869AAA1EA2CCDCC214C2EAD851 /* Pods-LiquidLoader_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3895BD033DDEAA1ACF4F0D45A787C49E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		40BD8ECC739580C9CE2BF9FCAD63CA8C /* UIView+Grow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6609D2A039CA263A9766D35B98B9DD /* UIView+Grow.swift */; };
 		417AE24DB1B2F4B5C741161FD4F6A6F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		492545FBB109A27A7B970CA55DD404FB /* UIView+Grow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449EF4379AA87F3C4AF4F348E538D105 /* UIView+Grow.swift */; };
-		4ACB43E9354ABB7B97488FDA3ED119FB /* LiquidLineEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE41D27B6D11143BE9118D92507FE9CA /* LiquidLineEffect.swift */; };
-		50F732B1605E4AF3DAA1AD16293B9BB5 /* LiquidLoader-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ED9EC619FF4E6A808274A5C2E2C38CED /* LiquidLoader-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		552305803289A8C7D0C84E24B247905C /* UIColorEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342540A524653F9A51BCC0C09ACFC826 /* UIColorEx.swift */; };
-		87A7DA55397B29D6BF4140EAA8FAFAFA /* LiquidLoader.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 28E877957A86A995819183845E451083 /* LiquidLoader.bundle */; };
-		99136B7542B7BBE000C4C4523E905B30 /* LiquidCircleEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833644DB0D47760658DFBEC7DA921058 /* LiquidCircleEffect.swift */; };
-		B2E94E6C1785ABA3EF3DF4B9759FFA31 /* LiquidUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681221A195A829A07D2717FFB2AE0956 /* LiquidUtil.swift */; };
+		4C3F4162E8FAAC1A60DC67A9AA989C58 /* LiquittableCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C25062055F0FCABABD6CE0534E1B9E /* LiquittableCircle.swift */; };
+		55AA1F33A5C4AB3E524EB1F47513FACB /* SimpleCircleLiquidEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC29F748E46CD366CF12A3592E8FB38 /* SimpleCircleLiquidEngine.swift */; };
+		59F91D045CE79112F494C51BA800458C /* LiquidLoader-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6808A5B4FD3100612EDA64BBE75E94 /* LiquidLoader-dummy.m */; };
+		69757A1D47E1CC2102E43D78DDD5161E /* LiquidLoadEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612BF9A151CC27D32C1D3BC5121947E5 /* LiquidLoadEffect.swift */; };
+		77397297DAE9EB50258A5ABFF5623169 /* ArrayEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD844B017296E87FFBC21C208DBA35A /* ArrayEx.swift */; };
+		8F5C6F72419D973E0507F110AFDBA99B /* LiquidLineEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6BE8DB9915032C56627EDDE1FBEC0E /* LiquidLineEffect.swift */; };
+		A0345120767716E37AC8C62DCEBE11EA /* LiquidLoader-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FDE14FE961B87B6CE27112E822876199 /* LiquidLoader-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AF97D892BDE05ABBF3544EA1599B9890 /* CGPointEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC33D15C2A5F606B8327704ADCB3E862 /* CGPointEx.swift */; };
+		B45A7DD64FD9A22F5117BB77C4F90884 /* CircularGradientLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C8A3A29F3992831A33EC6BD0E1CA17 /* CircularGradientLayer.swift */; };
+		BF1E1962B8FC4506FAFC5CD01DC55EA2 /* UIColorEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26E0FBDAF5AF116F3D91F1D128DCA9E /* UIColorEx.swift */; };
 		D29EF38F9E2D22A8F1150865153FBF8B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		D2EB5A821B46987688EDF0484701E531 /* LiquidLoader-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2175F29B975816DA172AB59886992D87 /* LiquidLoader-dummy.m */; };
-		E4136493412515BC050A90620C2124A9 /* CGRectEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FC3272D9BA390070550B6DADE6B700 /* CGRectEx.swift */; };
-		ED5CFB8E821B97F5F4B5E4A9EAA127DF /* LiquidLoadEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4AAD83622890A218B237A5389CD868 /* LiquidLoadEffect.swift */; };
+		DD890FE0B9FDF2964345062F9887ABF1 /* LiquidLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FF35115C7671E0E0570E3F8D6B34AC /* LiquidLoader.swift */; };
+		EFD4E07B46FD3DA0802F53697F903AA4 /* CGRectEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA90A7C03B8EA3074A3ED23CCC27854 /* CGRectEx.swift */; };
 		F0AE2A8ED5A09BDE6E693E3DD56CC624 /* Pods-LiquidLoader_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A46DD68CD67CA4ACA1147BC541906DA0 /* Pods-LiquidLoader_Tests-dummy.m */; };
-		F0E9FB6A5EAE5F0C1E2675ED06CE8EB2 /* ArrayEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B16395F412EB4227FB925231ACC720 /* ArrayEx.swift */; };
-		F150CAFA64831F9772A414A533000A83 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		F92A54EDE409B8AF21718BC5112A2B6C /* LiquittableCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212910B58D3CB6265807C2B7E130A486 /* LiquittableCircle.swift */; };
-		FDAFF3888900A83F6DA614D8E007E948 /* CircularGradientLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8512AF7E0E8A205B8B1D85AE902B10 /* CircularGradientLayer.swift */; };
+		F908A08DBBC2B77F485D2C12DB53C374 /* ObjC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1E09FCF58001D422927A77435EC06A /* ObjC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		21478B6402462C15F5E2926CF165858E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EB72414D72652DA17E62948A1689BF57;
-			remoteInfo = "LiquidLoader-LiquidLoader";
-		};
 		3CB2194E506EDDB894F3F7F386B20834 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1A642D30693E08A2DDD45A03BF4E7809;
+			remoteGlobalIDString = 2E6C0374BB40928A6293E9F803F11288;
 			remoteInfo = LiquidLoader;
 		};
 		6F8CA6F2864575EA1AC71A7887DC1238 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1A642D30693E08A2DDD45A03BF4E7809;
+			remoteGlobalIDString = 2E6C0374BB40928A6293E9F803F11288;
 			remoteInfo = LiquidLoader;
 		};
 /* End PBXContainerItemProxy section */
@@ -61,50 +53,48 @@
 		05B280D9B3CF1398ABEC88F2EAB31B66 /* Pods-LiquidLoader_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LiquidLoader_Tests-resources.sh"; sourceTree = "<group>"; };
 		060BAD9595BC9E563238CDA9021AF787 /* Pods-LiquidLoader_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LiquidLoader_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		0A93AD132C4E6C0C41157DFE25855F31 /* Pods-LiquidLoader_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-LiquidLoader_Example.modulemap"; sourceTree = "<group>"; };
-		10FC3272D9BA390070550B6DADE6B700 /* CGRectEx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CGRectEx.swift; sourceTree = "<group>"; };
-		212910B58D3CB6265807C2B7E130A486 /* LiquittableCircle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LiquittableCircle.swift; sourceTree = "<group>"; };
-		2175F29B975816DA172AB59886992D87 /* LiquidLoader-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LiquidLoader-dummy.m"; sourceTree = "<group>"; };
+		0AD844B017296E87FFBC21C208DBA35A /* ArrayEx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ArrayEx.swift; sourceTree = "<group>"; };
+		0D6609D2A039CA263A9766D35B98B9DD /* UIView+Grow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+Grow.swift"; sourceTree = "<group>"; };
+		11C25062055F0FCABABD6CE0534E1B9E /* LiquittableCircle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LiquittableCircle.swift; sourceTree = "<group>"; };
+		1E805DA6E0F2074F82F71A7EC11296E3 /* Pods_LiquidLoader_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LiquidLoader_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		22E04FA4D464C854794101BCF9F1F638 /* Pods-LiquidLoader_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LiquidLoader_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		28E877957A86A995819183845E451083 /* LiquidLoader.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiquidLoader.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		2E8512AF7E0E8A205B8B1D85AE902B10 /* CircularGradientLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CircularGradientLayer.swift; sourceTree = "<group>"; };
-		31106C46551A3C201B2BD2208DD046AA /* Pods_LiquidLoader_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LiquidLoader_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		342540A524653F9A51BCC0C09ACFC826 /* UIColorEx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIColorEx.swift; sourceTree = "<group>"; };
-		359A280192518C9D478CE5F2D719DE0B /* CGPointEx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CGPointEx.swift; sourceTree = "<group>"; };
-		449EF4379AA87F3C4AF4F348E538D105 /* UIView+Grow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+Grow.swift"; sourceTree = "<group>"; };
+		2ABE5BD98D4A02AB3B3E1F8260064A5D /* Pods_LiquidLoader_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LiquidLoader_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E6808A5B4FD3100612EDA64BBE75E94 /* LiquidLoader-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LiquidLoader-dummy.m"; sourceTree = "<group>"; };
 		44D7029640EE13E21DFA8329C87A96A6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		494AAB833567E609B1E7F4869A44AFB1 /* LiquidUtil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LiquidUtil.swift; sourceTree = "<group>"; };
 		4D24BE69DF64A5DDBF5B9784D6546C35 /* Pods-LiquidLoader_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LiquidLoader_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		4E6E52F97E257719B3967CC4A8964103 /* Pods-LiquidLoader_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LiquidLoader_Tests-umbrella.h"; sourceTree = "<group>"; };
-		51CB20DCD25C7B085D0553473CE46BE8 /* Pods_LiquidLoader_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LiquidLoader_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		681221A195A829A07D2717FFB2AE0956 /* LiquidUtil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LiquidUtil.swift; sourceTree = "<group>"; };
+		612BF9A151CC27D32C1D3BC5121947E5 /* LiquidLoadEffect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LiquidLoadEffect.swift; sourceTree = "<group>"; };
+		66C0AF920D100F4F046F08B0E0160E52 /* LiquidLoader.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = LiquidLoader.modulemap; sourceTree = "<group>"; };
 		6C9C456E042425FD0AAA04035BA7A8B9 /* Pods-LiquidLoader_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LiquidLoader_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		74D8964242CC9B5EE7760826EADB8774 /* Pods-LiquidLoader_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LiquidLoader_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		75C8A3A29F3992831A33EC6BD0E1CA17 /* CircularGradientLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CircularGradientLayer.swift; sourceTree = "<group>"; };
 		7892C3050F72DE3B3B8AA6389FAF2F67 /* Pods-LiquidLoader_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LiquidLoader_Example-resources.sh"; sourceTree = "<group>"; };
-		7C1F5BF8D7B69CCF7846F65BD1185D3C /* LiquidLoader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LiquidLoader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		833644DB0D47760658DFBEC7DA921058 /* LiquidCircleEffect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LiquidCircleEffect.swift; sourceTree = "<group>"; };
+		7A216DC6789F243C5558920114930607 /* LiquidCircleEffect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LiquidCircleEffect.swift; sourceTree = "<group>"; };
+		7FA90A7C03B8EA3074A3ED23CCC27854 /* CGRectEx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CGRectEx.swift; sourceTree = "<group>"; };
 		83941EE4B8AA124DE0DC9D929410A4F3 /* Pods-LiquidLoader_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LiquidLoader_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		84126EFF88D9D37202C8FE8477507A68 /* LiquidLoader.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LiquidLoader.xcconfig; sourceTree = "<group>"; };
-		8BAD6C2700DF9DDDB6A330915FC2E601 /* SimpleCircleLiquidEngine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SimpleCircleLiquidEngine.swift; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		98ED83F3D63ECD2881BC8D18414DE5CB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99FF35115C7671E0E0570E3F8D6B34AC /* LiquidLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LiquidLoader.swift; sourceTree = "<group>"; };
 		9C5B81241C442D23766DE3F9DF1236F2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A21B589DAF713F94C1BF08CD74223B00 /* LiquidLoader.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = LiquidLoader.modulemap; sourceTree = "<group>"; };
+		9FC29F748E46CD366CF12A3592E8FB38 /* SimpleCircleLiquidEngine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SimpleCircleLiquidEngine.swift; sourceTree = "<group>"; };
 		A46DD68CD67CA4ACA1147BC541906DA0 /* Pods-LiquidLoader_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LiquidLoader_Tests-dummy.m"; sourceTree = "<group>"; };
+		AC33D15C2A5F606B8327704ADCB3E862 /* CGPointEx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CGPointEx.swift; sourceTree = "<group>"; };
 		AE358E869AAA1EA2CCDCC214C2EAD851 /* Pods-LiquidLoader_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LiquidLoader_Example-umbrella.h"; sourceTree = "<group>"; };
-		B5C18CE0C7CD81F3BA298583F9A68286 /* ResourceBundle-LiquidLoader-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-LiquidLoader-Info.plist"; sourceTree = "<group>"; };
 		B5CB0F9EB7805E30638C9D53074FD986 /* Pods-LiquidLoader_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LiquidLoader_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		B78BC5450D178D61C85DFD2547FE9CC5 /* LiquidLoader-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LiquidLoader-prefix.pch"; sourceTree = "<group>"; };
+		BF135E40D6155F04CFB5391DC7BF0965 /* LiquidLoader-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LiquidLoader-prefix.pch"; sourceTree = "<group>"; };
 		CB85F05E045BA694107FA1EBD967268F /* Pods-LiquidLoader_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LiquidLoader_Example-dummy.m"; sourceTree = "<group>"; };
 		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		D1F20958BE46DA5196C7D2D100F64DDF /* Pods-LiquidLoader_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LiquidLoader_Example.release.xcconfig"; sourceTree = "<group>"; };
-		DE41D27B6D11143BE9118D92507FE9CA /* LiquidLineEffect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LiquidLineEffect.swift; sourceTree = "<group>"; };
-		E2B16395F412EB4227FB925231ACC720 /* ArrayEx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ArrayEx.swift; sourceTree = "<group>"; };
+		D26E0FBDAF5AF116F3D91F1D128DCA9E /* UIColorEx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIColorEx.swift; sourceTree = "<group>"; };
+		D9D992170055F6102646FF157183CD3E /* LiquidLoader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LiquidLoader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA476A5D2E1B68734278E00167005B6C /* Pods-LiquidLoader_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LiquidLoader_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		ED9EC619FF4E6A808274A5C2E2C38CED /* LiquidLoader-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LiquidLoader-umbrella.h"; sourceTree = "<group>"; };
 		EF66408B707E3B828E1301C313E9A5CB /* Pods-LiquidLoader_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-LiquidLoader_Tests.modulemap"; sourceTree = "<group>"; };
-		F1CE139922B5E3BB39C20B70CDD0C461 /* ObjC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ObjC.swift; sourceTree = "<group>"; };
+		F0252C5FC1B2047F56884EB1D5E6BF5F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4441D44EDF2D2E113C882E757F5C4CF /* Pods-LiquidLoader_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LiquidLoader_Example-frameworks.sh"; sourceTree = "<group>"; };
-		F66B06FD202BBEEE3BA2C4C81F68B25E /* LiquidLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LiquidLoader.swift; sourceTree = "<group>"; };
-		FB4AAD83622890A218B237A5389CD868 /* LiquidLoadEffect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LiquidLoadEffect.swift; sourceTree = "<group>"; };
+		F82F20EC7ECD48F0E80618C1D65AAD30 /* LiquidLoader.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LiquidLoader.xcconfig; sourceTree = "<group>"; };
+		FB1E09FCF58001D422927A77435EC06A /* ObjC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ObjC.swift; sourceTree = "<group>"; };
+		FD6BE8DB9915032C56627EDDE1FBEC0E /* LiquidLineEffect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LiquidLineEffect.swift; sourceTree = "<group>"; };
+		FDE14FE961B87B6CE27112E822876199 /* LiquidLoader-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LiquidLoader-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,33 +114,70 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		92A8392F6A9B5400FD00760C75832043 /* Frameworks */ = {
+		D0EDCFC007BBA43556F70F0F62DB4049 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F150CAFA64831F9772A414A533000A83 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F3F099467FF0B86C5A8409B764C44501 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				3895BD033DDEAA1ACF4F0D45A787C49E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3AACF151CF89D10BFD98B6C97624DD79 /* Products */ = {
+		012E1E7E8970ACCFBFDB75CE73DA7ED4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				28E877957A86A995819183845E451083 /* LiquidLoader.bundle */,
-				7C1F5BF8D7B69CCF7846F65BD1185D3C /* LiquidLoader.framework */,
-				31106C46551A3C201B2BD2208DD046AA /* Pods_LiquidLoader_Example.framework */,
-				51CB20DCD25C7B085D0553473CE46BE8 /* Pods_LiquidLoader_Tests.framework */,
+				D9D992170055F6102646FF157183CD3E /* LiquidLoader.framework */,
+				1E805DA6E0F2074F82F71A7EC11296E3 /* Pods_LiquidLoader_Example.framework */,
+				2ABE5BD98D4A02AB3B3E1F8260064A5D /* Pods_LiquidLoader_Tests.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		067565D3631A367EB095111D3F0518D1 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0AD844B017296E87FFBC21C208DBA35A /* ArrayEx.swift */,
+				AC33D15C2A5F606B8327704ADCB3E862 /* CGPointEx.swift */,
+				7FA90A7C03B8EA3074A3ED23CCC27854 /* CGRectEx.swift */,
+				75C8A3A29F3992831A33EC6BD0E1CA17 /* CircularGradientLayer.swift */,
+				7A216DC6789F243C5558920114930607 /* LiquidCircleEffect.swift */,
+				FD6BE8DB9915032C56627EDDE1FBEC0E /* LiquidLineEffect.swift */,
+				612BF9A151CC27D32C1D3BC5121947E5 /* LiquidLoadEffect.swift */,
+				99FF35115C7671E0E0570E3F8D6B34AC /* LiquidLoader.swift */,
+				494AAB833567E609B1E7F4869A44AFB1 /* LiquidUtil.swift */,
+				11C25062055F0FCABABD6CE0534E1B9E /* LiquittableCircle.swift */,
+				FB1E09FCF58001D422927A77435EC06A /* ObjC.swift */,
+				9FC29F748E46CD366CF12A3592E8FB38 /* SimpleCircleLiquidEngine.swift */,
+				D26E0FBDAF5AF116F3D91F1D128DCA9E /* UIColorEx.swift */,
+				0D6609D2A039CA263A9766D35B98B9DD /* UIView+Grow.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		23EE8F9491DDDC4A4FFE581188989E1B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F0252C5FC1B2047F56884EB1D5E6BF5F /* Info.plist */,
+				66C0AF920D100F4F046F08B0E0160E52 /* LiquidLoader.modulemap */,
+				F82F20EC7ECD48F0E80618C1D65AAD30 /* LiquidLoader.xcconfig */,
+				3E6808A5B4FD3100612EDA64BBE75E94 /* LiquidLoader-dummy.m */,
+				BF135E40D6155F04CFB5391DC7BF0965 /* LiquidLoader-prefix.pch */,
+				FDE14FE961B87B6CE27112E822876199 /* LiquidLoader-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/LiquidLoader";
+			sourceTree = "<group>";
+		};
+		3546AD6A006DCB833282D9BF928D0A09 /* LiquidLoader */ = {
+			isa = PBXGroup;
+			children = (
+				A1DB407253E988FC67801CD7E4C20D1B /* Pod */,
+				23EE8F9491DDDC4A4FFE581188989E1B /* Support Files */,
+			);
+			name = LiquidLoader;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
@@ -161,33 +188,10 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		511FD3D9114D2D74715ABBF9075B726B /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				98ED83F3D63ECD2881BC8D18414DE5CB /* Info.plist */,
-				A21B589DAF713F94C1BF08CD74223B00 /* LiquidLoader.modulemap */,
-				84126EFF88D9D37202C8FE8477507A68 /* LiquidLoader.xcconfig */,
-				2175F29B975816DA172AB59886992D87 /* LiquidLoader-dummy.m */,
-				B78BC5450D178D61C85DFD2547FE9CC5 /* LiquidLoader-prefix.pch */,
-				ED9EC619FF4E6A808274A5C2E2C38CED /* LiquidLoader-umbrella.h */,
-				B5C18CE0C7CD81F3BA298583F9A68286 /* ResourceBundle-LiquidLoader-Info.plist */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/LiquidLoader";
-			sourceTree = "<group>";
-		};
-		6B8B918B99E5B46A3B1E5C64983D2CF9 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				EB6A1BC82AA0FF7C2E3D5C13C4067846 /* Classes */,
-			);
-			path = Pod;
-			sourceTree = "<group>";
-		};
 		6EBDF1A8765C432644DAC8E621CCD564 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				ED755C84311AACA71547A480AD483259 /* LiquidLoader */,
+				3546AD6A006DCB833282D9BF928D0A09 /* LiquidLoader */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -198,9 +202,17 @@
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				6EBDF1A8765C432644DAC8E621CCD564 /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				3AACF151CF89D10BFD98B6C97624DD79 /* Products */,
+				012E1E7E8970ACCFBFDB75CE73DA7ED4 /* Products */,
 				C76AACF3E6B3B11A57C4150198C494CC /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		A1DB407253E988FC67801CD7E4C20D1B /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				067565D3631A367EB095111D3F0518D1 /* Classes */,
+			);
+			path = Pod;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -256,37 +268,6 @@
 			path = "Target Support Files/Pods-LiquidLoader_Tests";
 			sourceTree = "<group>";
 		};
-		EB6A1BC82AA0FF7C2E3D5C13C4067846 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				E2B16395F412EB4227FB925231ACC720 /* ArrayEx.swift */,
-				359A280192518C9D478CE5F2D719DE0B /* CGPointEx.swift */,
-				10FC3272D9BA390070550B6DADE6B700 /* CGRectEx.swift */,
-				2E8512AF7E0E8A205B8B1D85AE902B10 /* CircularGradientLayer.swift */,
-				833644DB0D47760658DFBEC7DA921058 /* LiquidCircleEffect.swift */,
-				DE41D27B6D11143BE9118D92507FE9CA /* LiquidLineEffect.swift */,
-				FB4AAD83622890A218B237A5389CD868 /* LiquidLoadEffect.swift */,
-				F66B06FD202BBEEE3BA2C4C81F68B25E /* LiquidLoader.swift */,
-				681221A195A829A07D2717FFB2AE0956 /* LiquidUtil.swift */,
-				212910B58D3CB6265807C2B7E130A486 /* LiquittableCircle.swift */,
-				F1CE139922B5E3BB39C20B70CDD0C461 /* ObjC.swift */,
-				8BAD6C2700DF9DDDB6A330915FC2E601 /* SimpleCircleLiquidEngine.swift */,
-				342540A524653F9A51BCC0C09ACFC826 /* UIColorEx.swift */,
-				449EF4379AA87F3C4AF4F348E538D105 /* UIView+Grow.swift */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		ED755C84311AACA71547A480AD483259 /* LiquidLoader */ = {
-			isa = PBXGroup;
-			children = (
-				6B8B918B99E5B46A3B1E5C64983D2CF9 /* Pod */,
-				511FD3D9114D2D74715ABBF9075B726B /* Support Files */,
-			);
-			name = LiquidLoader;
-			path = ../..;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -298,11 +279,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		408E4284615C78EB645718C8346A7182 /* Headers */ = {
+		5F38F582D1A4048575484AFCAF501061 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50F732B1605E4AF3DAA1AD16293B9BB5 /* LiquidLoader-umbrella.h in Headers */,
+				A0345120767716E37AC8C62DCEBE11EA /* LiquidLoader-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,23 +298,21 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		1A642D30693E08A2DDD45A03BF4E7809 /* LiquidLoader */ = {
+		2E6C0374BB40928A6293E9F803F11288 /* LiquidLoader */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9591E796B97DB8430FF765170B911E73 /* Build configuration list for PBXNativeTarget "LiquidLoader" */;
+			buildConfigurationList = A3B307FBDE68D743D11CB66FC72225D3 /* Build configuration list for PBXNativeTarget "LiquidLoader" */;
 			buildPhases = (
-				002D0ED32D2DAADCCEEE3FE159B162DF /* Sources */,
-				92A8392F6A9B5400FD00760C75832043 /* Frameworks */,
-				FBAB35BFE36153BF3D5A472657F01BFB /* Resources */,
-				408E4284615C78EB645718C8346A7182 /* Headers */,
+				313CDDB898EAA6481E3EB82A9BF9619B /* Sources */,
+				D0EDCFC007BBA43556F70F0F62DB4049 /* Frameworks */,
+				5F38F582D1A4048575484AFCAF501061 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				8EF040C8257887B908D1907FDF0C090A /* PBXTargetDependency */,
 			);
 			name = LiquidLoader;
 			productName = LiquidLoader;
-			productReference = 7C1F5BF8D7B69CCF7846F65BD1185D3C /* LiquidLoader.framework */;
+			productReference = D9D992170055F6102646FF157183CD3E /* LiquidLoader.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		8FFCCF9690C681EED1BF209718EFB0FA /* Pods-LiquidLoader_Example */ = {
@@ -351,7 +330,7 @@
 			);
 			name = "Pods-LiquidLoader_Example";
 			productName = "Pods-LiquidLoader_Example";
-			productReference = 31106C46551A3C201B2BD2208DD046AA /* Pods_LiquidLoader_Example.framework */;
+			productReference = 1E805DA6E0F2074F82F71A7EC11296E3 /* Pods_LiquidLoader_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		EA69F8E90E99A827BBBCE1C6DF231C37 /* Pods-LiquidLoader_Tests */ = {
@@ -369,25 +348,8 @@
 			);
 			name = "Pods-LiquidLoader_Tests";
 			productName = "Pods-LiquidLoader_Tests";
-			productReference = 51CB20DCD25C7B085D0553473CE46BE8 /* Pods_LiquidLoader_Tests.framework */;
+			productReference = 2ABE5BD98D4A02AB3B3E1F8260064A5D /* Pods_LiquidLoader_Tests.framework */;
 			productType = "com.apple.product-type.framework";
-		};
-		EB72414D72652DA17E62948A1689BF57 /* LiquidLoader-LiquidLoader */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 67F1D6131CB608165CBE4E536B024056 /* Build configuration list for PBXNativeTarget "LiquidLoader-LiquidLoader" */;
-			buildPhases = (
-				32FBF1217D17A39EA6C78D14DF3029C0 /* Sources */,
-				F3F099467FF0B86C5A8409B764C44501 /* Frameworks */,
-				CC0C18C8CD017B7ECB618675B84C2E35 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "LiquidLoader-LiquidLoader";
-			productName = "LiquidLoader-LiquidLoader";
-			productReference = 28E877957A86A995819183845E451083 /* LiquidLoader.bundle */;
-			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -397,6 +359,17 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					2E6C0374BB40928A6293E9F803F11288 = {
+						LastSwiftMigration = 0800;
+					};
+					8FFCCF9690C681EED1BF209718EFB0FA = {
+						LastSwiftMigration = 0800;
+					};
+					EA69F8E90E99A827BBBCE1C6DF231C37 = {
+						LastSwiftMigration = 0800;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -406,59 +379,18 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 3AACF151CF89D10BFD98B6C97624DD79 /* Products */;
+			productRefGroup = 012E1E7E8970ACCFBFDB75CE73DA7ED4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1A642D30693E08A2DDD45A03BF4E7809 /* LiquidLoader */,
-				EB72414D72652DA17E62948A1689BF57 /* LiquidLoader-LiquidLoader */,
+				2E6C0374BB40928A6293E9F803F11288 /* LiquidLoader */,
 				8FFCCF9690C681EED1BF209718EFB0FA /* Pods-LiquidLoader_Example */,
 				EA69F8E90E99A827BBBCE1C6DF231C37 /* Pods-LiquidLoader_Tests */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXResourcesBuildPhase section */
-		CC0C18C8CD017B7ECB618675B84C2E35 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FBAB35BFE36153BF3D5A472657F01BFB /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				87A7DA55397B29D6BF4140EAA8FAFAFA /* LiquidLoader.bundle in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		002D0ED32D2DAADCCEEE3FE159B162DF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F0E9FB6A5EAE5F0C1E2675ED06CE8EB2 /* ArrayEx.swift in Sources */,
-				1348B6254310862127C594A0C5917240 /* CGPointEx.swift in Sources */,
-				E4136493412515BC050A90620C2124A9 /* CGRectEx.swift in Sources */,
-				FDAFF3888900A83F6DA614D8E007E948 /* CircularGradientLayer.swift in Sources */,
-				99136B7542B7BBE000C4C4523E905B30 /* LiquidCircleEffect.swift in Sources */,
-				4ACB43E9354ABB7B97488FDA3ED119FB /* LiquidLineEffect.swift in Sources */,
-				ED5CFB8E821B97F5F4B5E4A9EAA127DF /* LiquidLoadEffect.swift in Sources */,
-				D2EB5A821B46987688EDF0484701E531 /* LiquidLoader-dummy.m in Sources */,
-				1010135483D04BAA411F05B75B06F902 /* LiquidLoader.swift in Sources */,
-				B2E94E6C1785ABA3EF3DF4B9759FFA31 /* LiquidUtil.swift in Sources */,
-				F92A54EDE409B8AF21718BC5112A2B6C /* LiquittableCircle.swift in Sources */,
-				18414698CF7CD9731EB330DF8C783FDA /* ObjC.swift in Sources */,
-				085005BF1757B44CCB4AF8E0E14AB779 /* SimpleCircleLiquidEngine.swift in Sources */,
-				552305803289A8C7D0C84E24B247905C /* UIColorEx.swift in Sources */,
-				492545FBB109A27A7B970CA55DD404FB /* UIView+Grow.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		2400A601137139C844E77FB0311123C5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -467,10 +399,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		32FBF1217D17A39EA6C78D14DF3029C0 /* Sources */ = {
+		313CDDB898EAA6481E3EB82A9BF9619B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77397297DAE9EB50258A5ABFF5623169 /* ArrayEx.swift in Sources */,
+				AF97D892BDE05ABBF3544EA1599B9890 /* CGPointEx.swift in Sources */,
+				EFD4E07B46FD3DA0802F53697F903AA4 /* CGRectEx.swift in Sources */,
+				B45A7DD64FD9A22F5117BB77C4F90884 /* CircularGradientLayer.swift in Sources */,
+				17906F3011D1B9786DAAC07A35CE0027 /* LiquidCircleEffect.swift in Sources */,
+				8F5C6F72419D973E0507F110AFDBA99B /* LiquidLineEffect.swift in Sources */,
+				69757A1D47E1CC2102E43D78DDD5161E /* LiquidLoadEffect.swift in Sources */,
+				59F91D045CE79112F494C51BA800458C /* LiquidLoader-dummy.m in Sources */,
+				DD890FE0B9FDF2964345062F9887ABF1 /* LiquidLoader.swift in Sources */,
+				2662F346FCD13029427E9E4F60692D24 /* LiquidUtil.swift in Sources */,
+				4C3F4162E8FAAC1A60DC67A9AA989C58 /* LiquittableCircle.swift in Sources */,
+				F908A08DBBC2B77F485D2C12DB53C374 /* ObjC.swift in Sources */,
+				55AA1F33A5C4AB3E524EB1F47513FACB /* SimpleCircleLiquidEngine.swift in Sources */,
+				BF1E1962B8FC4506FAFC5CD01DC55EA2 /* UIColorEx.swift in Sources */,
+				40BD8ECC739580C9CE2BF9FCAD63CA8C /* UIView+Grow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,56 +432,21 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		8EF040C8257887B908D1907FDF0C090A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "LiquidLoader-LiquidLoader";
-			target = EB72414D72652DA17E62948A1689BF57 /* LiquidLoader-LiquidLoader */;
-			targetProxy = 21478B6402462C15F5E2926CF165858E /* PBXContainerItemProxy */;
-		};
 		A2398DF7A7A44EA6BCBF015C9806614F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = LiquidLoader;
-			target = 1A642D30693E08A2DDD45A03BF4E7809 /* LiquidLoader */;
+			target = 2E6C0374BB40928A6293E9F803F11288 /* LiquidLoader */;
 			targetProxy = 3CB2194E506EDDB894F3F7F386B20834 /* PBXContainerItemProxy */;
 		};
 		BA762BFA4A1A6B654A6FF5EA3071BD92 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = LiquidLoader;
-			target = 1A642D30693E08A2DDD45A03BF4E7809 /* LiquidLoader */;
+			target = 2E6C0374BB40928A6293E9F803F11288 /* LiquidLoader */;
 			targetProxy = 6F8CA6F2864575EA1AC71A7887DC1238 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		084CB88E6BD93C4CF3EA99D386F82E1D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 84126EFF88D9D37202C8FE8477507A68 /* LiquidLoader.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/LiquidLoader/LiquidLoader-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/LiquidLoader/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/LiquidLoader/LiquidLoader.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = LiquidLoader;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		0ACDCBCB0B6796575F46FFA2F5410C6B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -573,53 +485,6 @@
 			};
 			name = Release;
 		};
-		20CBFFFE46C0171E83C0FB4F8297541B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 84126EFF88D9D37202C8FE8477507A68 /* LiquidLoader.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/LiquidLoader";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/LiquidLoader/ResourceBundle-LiquidLoader-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_NAME = LiquidLoader;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		3A6A13769981400DDD537BCC059D855C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 84126EFF88D9D37202C8FE8477507A68 /* LiquidLoader.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/LiquidLoader/LiquidLoader-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/LiquidLoader/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/LiquidLoader/LiquidLoader.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = LiquidLoader;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		547B6A506D731A063D97C3A49698876A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 22E04FA4D464C854794101BCF9F1F638 /* Pods-LiquidLoader_Example.debug.xcconfig */;
@@ -648,26 +513,71 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 2.3;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		A60AB7C59A08B1B28089748D874CC09C /* Debug */ = {
+		6D3880689C64AD74A95864BDDE736F1C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 84126EFF88D9D37202C8FE8477507A68 /* LiquidLoader.xcconfig */;
+			baseConfigurationReference = F82F20EC7ECD48F0E80618C1D65AAD30 /* LiquidLoader.xcconfig */;
 			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/LiquidLoader";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/LiquidLoader/ResourceBundle-LiquidLoader-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/LiquidLoader/LiquidLoader-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LiquidLoader/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LiquidLoader/LiquidLoader.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = LiquidLoader;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 2.3;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C08E7646AE1DF8F48151869C7D4547CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F82F20EC7ECD48F0E80618C1D65AAD30 /* LiquidLoader.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/LiquidLoader/LiquidLoader-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LiquidLoader/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LiquidLoader/LiquidLoader.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = LiquidLoader;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 2.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
@@ -698,6 +608,7 @@
 				PRODUCT_NAME = Pods_LiquidLoader_Example;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 2.3;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -731,6 +642,7 @@
 				PRODUCT_NAME = Pods_LiquidLoader_Tests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 2.3;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -807,6 +719,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 2.3;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -834,20 +747,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		67F1D6131CB608165CBE4E536B024056 /* Build configuration list for PBXNativeTarget "LiquidLoader-LiquidLoader" */ = {
+		A3B307FBDE68D743D11CB66FC72225D3 /* Build configuration list for PBXNativeTarget "LiquidLoader" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A60AB7C59A08B1B28089748D874CC09C /* Debug */,
-				20CBFFFE46C0171E83C0FB4F8297541B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9591E796B97DB8430FF765170B911E73 /* Build configuration list for PBXNativeTarget "LiquidLoader" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3A6A13769981400DDD537BCC059D855C /* Debug */,
-				084CB88E6BD93C4CF3EA99D386F82E1D /* Release */,
+				C08E7646AE1DF8F48151869C7D4547CA /* Debug */,
+				6D3880689C64AD74A95864BDDE736F1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
