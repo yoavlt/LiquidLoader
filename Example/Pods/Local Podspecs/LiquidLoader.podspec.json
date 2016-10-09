@@ -1,6 +1,6 @@
 {
   "name": "LiquidLoader",
-  "version": "0.1.1",
+  "version": "1.2.1",
   "summary": "Loader UI components with liquid animation",
   "description": "Loader UI components with liquid animation inspired by Spinner Loader - Gooey light Effect",
   "homepage": "https://github.com/yoavlt/LiquidLoader",
@@ -10,16 +10,11 @@
   },
   "source": {
     "git": "https://github.com/yoavlt/LiquidLoader.git",
-    "tag": "0.1.1"
+    "tag": "1.2.1"
   },
   "platforms": {
     "ios": "8.0"
   },
   "requires_arc": true,
-  "source_files": "Pod/Classes/**/*",
-  "resource_bundles": {
-    "LiquidLoader": [
-      "Pod/Assets/*.png"
-    ]
-  }
+  "source_files": "Pod/Classes/**/*"
 }

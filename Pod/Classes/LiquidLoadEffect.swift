@@ -73,7 +73,7 @@ class LiquidLoadEffect : NSObject {
         }
         resize()
 
-        timer = CADisplayLink(target: self, selector: "update")
+        timer = CADisplayLink(target: self, selector: #selector(LiquidLoadEffect.update))
         timer?.addToRunLoop(NSRunLoop.mainRunLoop(), forMode: NSRunLoopCommonModes)
     }
     
