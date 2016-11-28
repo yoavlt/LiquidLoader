@@ -15,9 +15,9 @@ class LiquidLoadEffect : NSObject {
     var duration: CGFloat
     var circleScale: CGFloat = 1.17
     var moveScale: CGFloat = 0.80
-    var color = UIColor.whiteColor()
-    var growColor = UIColor.redColor()
-
+    var color = UIColor.white
+    var growColor = UIColor.red
+    
     var engine: SimpleCircleLiquidEngine?
     var moveCircle: LiquittableCircle?
     var shadowCircle: LiquittableCircle?
@@ -42,7 +42,7 @@ class LiquidLoadEffect : NSObject {
         }
     }
 
-    init(loader: LiquidLoader, color: UIColor, circleCount: Int, duration: CGFloat, growColor: UIColor? = UIColor.redColor()) {
+    init(loader: LiquidLoader, color: UIColor, circleCount: Int, duration: CGFloat, growColor: UIColor? = UIColor.red) {
         self.numberOfCircles = circleCount
         self.duration = duration
         self.circleRadius = loader.frame.width * 0.05
@@ -74,10 +74,10 @@ class LiquidLoadEffect : NSObject {
         resize()
 
         timer = CADisplayLink(target: self, selector: #selector(LiquidLoadEffect.update))
-        timer?.addToRunLoop(NSRunLoop.mainRunLoop(), forMode: NSRunLoopCommonModes)
+        timer?.add(to: RunLoop.main, forMode: RunLoopMode.commonModes)
     }
     
-    func updateKeyframe(key: CGFloat) {
+    func updateKeyframe(_ key: CGFloat) {
         self.engine?.clear()
         let movePos = movePosition(key)
         
@@ -97,7 +97,7 @@ class LiquidLoadEffect : NSObject {
             self.engine?.draw(parent)
         }
         if let shadow = shadowCircle {
-            loader?.bringSubviewToFront(shadow)
+            loader?.bringSubview(toFront: shadow)
         }
     }
 
@@ -105,8 +105,8 @@ class LiquidLoadEffect : NSObject {
         return [] // abstract
     }
 
-    func movePosition(key: CGFloat) -> CGPoint {
-        return CGPointZero // abstract
+    func movePosition(_ key: CGFloat) -> CGPoint {
+        return CGPoint.zero // abstract
     }
 
     func update() {
@@ -117,7 +117,7 @@ class LiquidLoadEffect : NSObject {
         // abstract
     }
     
-    func grow(isGrow: Bool) {
+    func grow(_ isGrow: Bool) {
         if isGrow {
             shadowCircle = LiquittableCircle(center: self.moveCircle!.center, radius: self.moveCircle!.radius * 1.0, color: self.color, growColor: growColor)
             shadowCircle?.isGrow = isGrow

@@ -9,7 +9,7 @@
 import Foundation
 
 extension Array {
-    func take(n: Int) -> [Element] {
+    func take(_ n: Int) -> [Element] {
         if self.count == 0 {
             return []
         }
@@ -21,13 +21,13 @@ extension Array {
         return result
     }
     
-    func each(f: (Element) -> ()) {
+    func each(_ f: (Element) -> ()) {
         for item in self {
             f(item)
         }
     }
     
-    func eachWithIndex(f: (Int, Element) -> ()) {
+    func eachWithIndex(_ f: (Int, Element) -> ()) {
         if self.count <= 0 {
             return
         }
@@ -36,7 +36,7 @@ extension Array {
         }
     }
 
-    func zip<U>(other: [U]) -> [(Element, U)] {
+    func zip<U>(_ other: [U]) -> [(Element, U)] {
         var result = [(Element, U)]()
         for (p, q) in Swift.zip(self, other) {
             result.append((p, q))
@@ -44,15 +44,15 @@ extension Array {
         return result
     }
 
-    func indexOf <U: Equatable> (item: U) -> Int? {
+    func indexOf <U: Equatable> (_ item: U) -> Int? {
         if item is Element {
-            return unsafeBitCast(self, [U].self).indexOf(item)
+            return unsafeBitCast(self, to: [U].self).indexOf(item)
         }
         
         return nil
     }
     
-    func find (f: (Element) -> Bool) -> Element? {
+    func find (_ f: (Element) -> Bool) -> Element? {
         for value in self {
             if f(value) {
                 return value
@@ -61,7 +61,7 @@ extension Array {
         return nil
     }
     
-    func mapWithIndex<U>(f: (Int, Element) -> U) -> [U] {
+    func mapWithIndex<U>(_ f: (Int, Element) -> U) -> [U] {
         if self.isEmpty {
             return []
         }
@@ -74,7 +74,7 @@ extension Array {
         return elements
     }
     
-    func without<U: Equatable>(target: U) -> [U] {
+    func without<U: Equatable>(_ target: U) -> [U] {
         var results: [U] = []
         for item in self {
             if item as! U != target {
@@ -84,7 +84,7 @@ extension Array {
         return results
     }
     
-    func at(index: Int) -> Element? {
+    func at(_ index: Int) -> Element? {
         if count > index {
             return self[index]
         }
