@@ -31,8 +31,8 @@ class LiquidCircleEffect : LiquidLoadEffect {
         }
     }
 
-    override func movePosition(key: CGFloat) -> CGPoint {
-        guard self.loader != nil else {return CGPointZero}
+    override func movePosition(_ key: CGFloat) -> CGPoint {
+        guard self.loader != nil else {return CGPoint.zero}
         
         let frame = self.loader!.frame.center.minus(self.loader!.frame.origin)
         return CGMath.circlePoint(
@@ -66,7 +66,7 @@ class LiquidCircleEffect : LiquidLoadEffect {
         let moveVec = moveCircle!.center.minus(loader.center.minus(loader.frame.origin)).normalized()
         circles.map { circle in
             return (circle, moveVec.dot(circle.center.minus(self.loader.center.minus(self.loader.frame.origin)).normalized()))
-        }.each { (let circle, let dot) in
+        }.each { (circle, dot) in
             if 0.75 < dot && dot <= 1.0 {
                 let normalized = (dot - 0.75) / 0.25
                 let scale = normalized * normalized

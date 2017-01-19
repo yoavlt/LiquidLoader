@@ -41,21 +41,21 @@ public class LiquidLoader : UIView {
     public init(frame: CGRect, effect: Effect) {
         self.effect = effect
         super.init(frame: frame)
-        self.effectDelegate = self.effect.setup(self)
+        self.effectDelegate = self.effect.setup(loader: self)
     }
 
     public required init?(coder aDecoder: NSCoder) {
-        self.effect = .Circle(UIColor.whiteColor(), 5, 3.0, UIColor.redColor())
+        self.effect = .Circle(UIColor.white, 5, 3.0, UIColor.red)
         super.init(coder: aDecoder)
-        self.effectDelegate = self.effect.setup(self)
+        self.effectDelegate = self.effect.setup(loader: self)
     }
 
     public func show() {
-        self.hidden = false
+        self.isHidden = false
     }
 
     public func hide() {
-        self.hidden = true
+        self.isHidden = true
     }
     
     override public func didMoveToWindow() {

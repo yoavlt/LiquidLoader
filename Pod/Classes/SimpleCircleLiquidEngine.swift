@@ -15,9 +15,9 @@ import UIKit
 class SimpleCircleLiquidEngine {
 
     let radiusThresh: CGFloat
-    private var layer: CALayer = CAShapeLayer()
+    fileprivate var layer: CALayer = CAShapeLayer()
 
-    var color = UIColor.redColor()
+    var color = UIColor()
     
     let ConnectThresh: CGFloat = 0.3
     var angleThresh: CGFloat = 0.5
@@ -27,7 +27,7 @@ class SimpleCircleLiquidEngine {
         self.angleThresh = angleThresh
     }
 
-    func push(circle: LiquittableCircle, other: LiquittableCircle) -> [LiquittableCircle] {
+    func push(_ circle: LiquittableCircle, other: LiquittableCircle) -> [LiquittableCircle] {
         if let paths = generateConnectedPath(circle, other: other) {
             let layers = paths.map(self.constructLayer)
             layers.each(layer.addSublayer)
@@ -36,7 +36,7 @@ class SimpleCircleLiquidEngine {
         return []
     }
     
-    func draw(parent: UIView) {
+    func draw(_ parent: UIView) {
         parent.layer.addSublayer(layer)
     }
 
@@ -46,33 +46,33 @@ class SimpleCircleLiquidEngine {
         layer = CAShapeLayer()
     }
 
-    func constructLayer(path: UIBezierPath) -> CALayer {
-        let pathBounds = CGPathGetBoundingBox(path.CGPath);
+    func constructLayer(_ path: UIBezierPath) -> CALayer {
+        let pathBounds = path.cgPath.boundingBox;
 
         let shape = CAShapeLayer()
-        shape.fillColor = self.color.CGColor
-        shape.path = path.CGPath
+        shape.fillColor = self.color.cgColor
+        shape.path = path.cgPath
         shape.frame = CGRect(x: 0, y: 0, width: pathBounds.width, height: pathBounds.height)
         
         return shape
     }
     
-    private func circleConnectedPoint(circle: LiquittableCircle, other: LiquittableCircle, angle: CGFloat) -> (CGPoint, CGPoint) {
+    fileprivate func circleConnectedPoint(_ circle: LiquittableCircle, other: LiquittableCircle, angle: CGFloat) -> (CGPoint, CGPoint) {
         let vec = other.center.minus(circle.center)
         let radian = atan2(vec.y, vec.x)
-        let p1 = circle.circlePoint(radian + angle)
-        let p2 = circle.circlePoint(radian - angle)
+        let p1 = circle.circlePoint(rad: radian + angle)
+        let p2 = circle.circlePoint(rad: radian - angle)
         return (p1, p2)
     }
     
-    private func circleConnectedPoint(circle: LiquittableCircle, other: LiquittableCircle) -> (CGPoint, CGPoint) {
+    fileprivate func circleConnectedPoint(_ circle: LiquittableCircle, other: LiquittableCircle) -> (CGPoint, CGPoint) {
         var ratio = circleRatio(circle, other: other)
         ratio = (ratio + ConnectThresh) / (1.0 + ConnectThresh)
         let angle = CGFloat(M_PI_2) * ratio
         return circleConnectedPoint(circle, other: other, angle: angle)
     }
 
-    private func generateConnectedPath(circle: LiquittableCircle, other: LiquittableCircle) -> [UIBezierPath]? {
+    fileprivate func generateConnectedPath(_ circle: LiquittableCircle, other: LiquittableCircle) -> [UIBezierPath]? {
         if isConnected(circle, other: other) {
             let ratio = circleRatio(circle, other: other)
             switch ratio {
@@ -91,24 +91,24 @@ class SimpleCircleLiquidEngine {
         }
     }
 
-    private func normalPath(circle: LiquittableCircle, other: LiquittableCircle) -> UIBezierPath? {
+    fileprivate func normalPath(_ circle: LiquittableCircle, other: LiquittableCircle) -> UIBezierPath? {
         let (p1, p2) = circleConnectedPoint(circle, other: other)
         let (p3, p4) = circleConnectedPoint(other, other: circle)
         if let crossed = CGPoint.intersection(p1, to: p3, from2: p2, to2: p4) {
             return withBezier { path in
                 let r = self.circleRatio(circle, other: other)
-                path.moveToPoint(p1)
+                path.move(to: p1)
                 let mul = p1.plus(p4).div(2).split(crossed, ratio: r * 1.25 - 0.25)
-                path.addQuadCurveToPoint(p4, controlPoint: mul)
-                path.addLineToPoint(p3)
+                path.addQuadCurve(to: p4, controlPoint: mul)
+                path.addLine(to: p3)
                 let mul2 = p2.plus(p3).div(2).split(crossed, ratio: r * 1.25 - 0.25)
-                path.addQuadCurveToPoint(p2, controlPoint: mul2)
+                path.addQuadCurve(to: p2, controlPoint: mul2)
             }
         }
         return nil
     }
 
-    private func splitPath(circle: LiquittableCircle, other: LiquittableCircle, ratio: CGFloat) -> [UIBezierPath] {
+    fileprivate func splitPath(_ circle: LiquittableCircle, other: LiquittableCircle, ratio: CGFloat) -> [UIBezierPath] {
         let (p1, p2) = circleConnectedPoint(circle, other: other, angle: CGMath.degToRad(40))
         let (p3, p4) = circleConnectedPoint(other, other: circle, angle: CGMath.degToRad(40))
 
@@ -119,26 +119,26 @@ class SimpleCircleLiquidEngine {
 
             let a1 = d1.split(crossed.mid(d2), ratio: 1 - r)
             let part = withBezier { path in
-                path.moveToPoint(p1)
-                path.addQuadCurveToPoint(p2, controlPoint: a1)
+                path.move(to: p1)
+                path.addQuadCurve(to: p2, controlPoint: a1)
             }
             let a2 = d2.split(crossed.mid(d1), ratio: 1 - r)
             let part2 = withBezier { path in
-                path.moveToPoint(p3)
-                path.addQuadCurveToPoint(p4, controlPoint: a2)
+                path.move(to: p3)
+                path.addQuadCurve(to: p4, controlPoint: a2)
             }
             return [part, part2]
         }
         return []
     }
 
-    private func circleRatio(circle: LiquittableCircle, other: LiquittableCircle) -> CGFloat {
+    fileprivate func circleRatio(_ circle: LiquittableCircle, other: LiquittableCircle) -> CGFloat {
         let distance = other.center.minus(circle.center).length()
         let ratio = 1.0 - (distance - radiusThresh) / (circle.radius + other.radius + radiusThresh)
         return min(max(ratio, 0.0), 1.0)
     }
 
-    func isConnected(circle: LiquittableCircle, other: LiquittableCircle) -> Bool {
+    func isConnected(_ circle: LiquittableCircle, other: LiquittableCircle) -> Bool {
         let distance = circle.center.minus(other.center).length()
         return distance - circle.radius - other.radius < radiusThresh
     }

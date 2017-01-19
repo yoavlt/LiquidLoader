@@ -14,7 +14,7 @@ class LiquittableCircle : UIView {
     var points: [CGPoint] = []
     var isGrow = false {
         didSet {
-            grow(isGrow)
+            grow(isGrow: isGrow)
         }
     }
     var radius: CGFloat {
@@ -22,8 +22,8 @@ class LiquittableCircle : UIView {
             setup()
         }
     }
-    var color: UIColor = UIColor.redColor()
-    var growColor: UIColor = UIColor.whiteColor()
+    var color: UIColor = UIColor.red
+    var growColor: UIColor = UIColor.white
 
     init(center: CGPoint, radius: CGFloat, color: UIColor, growColor: UIColor?) {
         let frame = CGRect(x: center.x - radius, y: center.y - radius, width: 2 * radius, height: 2 * radius)
@@ -47,19 +47,19 @@ class LiquittableCircle : UIView {
 
     private func setup() {
         self.frame = CGRect(x: center.x - radius, y: center.y - radius, width: 2 * radius, height: 2 * radius)
-        let bezierPath = UIBezierPath(ovalInRect: CGRect(origin: CGPointZero, size: CGSize(width: radius * 2, height: radius * 2)))
-        draw(bezierPath)
+        let bezierPath = UIBezierPath(ovalIn: CGRect(origin: CGPoint(x: 0, y: 0), size: CGSize(width: radius * 2, height: radius * 2)))
+        draw(path: bezierPath)
     }
 
     func draw(path: UIBezierPath) {
         self.layer.sublayers?.each { $0.removeFromSuperlayer() }
         let layer = CAShapeLayer(layer: self.layer)
         layer.lineWidth = 3.0
-        layer.fillColor = self.color.CGColor
-        layer.path = path.CGPath
+        layer.fillColor = self.color.cgColor
+        layer.path = path.cgPath
         self.layer.addSublayer(layer)
         if isGrow {
-            grow(true)
+            grow(isGrow: true)
         }
     }
     

@@ -24,18 +24,18 @@ class LiquidLineEffect : LiquidLoadEffect {
         }
     }
 
-    override func movePosition(key: CGFloat) -> CGPoint {
+    override func movePosition(_ key: CGFloat) -> CGPoint {
         if loader != nil {
             return CGPoint(
                 x:  (circles.last!.frame.rightBottom.x + circleInter)  * sineTransform(key),
                 y: loader.frame.height * 0.5
             )
         } else {
-            return CGPointZero
+            return CGPoint.zero
         }
     }
 
-    func sineTransform(key: CGFloat) -> CGFloat {
+    func sineTransform(_ key: CGFloat) -> CGFloat {
         return sin(key * CGFloat(M_PI)) * 0.5 + 0.5
     }
 
@@ -61,7 +61,7 @@ class LiquidLineEffect : LiquidLoadEffect {
     override func resize() {
         circles.map { circle in
             return (circle, circle.center.minus(self.moveCircle!.center).length())
-        }.each { (let circle, let distance) in
+        }.each { (circle, distance) in
             let normalized = 1.0 - distance / (self.circleRadius + self.circleInter)
             if normalized > 0.0 {
                 circle.radius = self.circleRadius + (self.circleRadius * self.circleScale - self.circleRadius) * normalized
