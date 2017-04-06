@@ -22,13 +22,13 @@ extension LiquidLoader {
         var s: Effect
         
         if effect == .line {
-            s = Effect.Line(color, numberOfCircle, duration, growColor)
+            s = Effect.line(color, numberOfCircle, duration, growColor)
         } else if effect == .circle {
-            s = Effect.Circle(color, numberOfCircle, duration, growColor)
+            s = Effect.circle(color, numberOfCircle, duration, growColor)
         } else if effect == .growLine {
-            s = Effect.GrowLine(color, numberOfCircle, duration, growColor)
+            s = Effect.growLine(color, numberOfCircle, duration, growColor)
         } else { //if effect == .GrowCircle {
-            s = Effect.GrowCircle(color, numberOfCircle, duration, growColor)
+            s = Effect.growCircle(color, numberOfCircle, duration, growColor)
         }
         
         self.init(frame: frame, effect: s)
