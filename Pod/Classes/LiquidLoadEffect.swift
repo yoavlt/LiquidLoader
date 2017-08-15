@@ -86,7 +86,7 @@ class LiquidLoadEffect : NSObject {
         shadowCircle?.center = movePos
         circles.each { circle in
             if self.moveCircle != nil {
-                self.engine?.push(self.moveCircle!, other: circle)
+                _ = self.engine?.push(self.moveCircle!, other: circle)
             }
         }
         
