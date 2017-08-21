@@ -36,7 +36,7 @@ class LiquidLineEffect : LiquidLoadEffect {
     }
 
     func sineTransform(_ key: CGFloat) -> CGFloat {
-        return sin(key * CGFloat(M_PI)) * 0.5 + 0.5
+        return sin(key * CGFloat(Double.pi)) * 0.5 + 0.5
     }
 
     override func update() {
