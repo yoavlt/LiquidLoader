@@ -52,7 +52,7 @@ class LiquidLineEffect : LiquidLoadEffect {
         if circleRadius == nil {
             circleRadius = loader.frame.width * 0.05
         }
-        self.circleInter = (loader.frame.width - 2 * circleRadius * 5) / 6
+        self.circleInter = (loader.frame.width - 2 * circleRadius * CGFloat(numberOfCircles)) / CGFloat(numberOfCircles + 1)
         self.engine = SimpleCircleLiquidEngine(radiusThresh: self.circleRadius, angleThresh: 0.2)
         let moveCircleRadius = circleRadius * moveScale
         self.moveCircle = LiquittableCircle(center: CGPoint(x: 0, y: loader.frame.height * 0.5), radius: moveCircleRadius, color: color, growColor: growColor)
