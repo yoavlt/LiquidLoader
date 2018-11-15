@@ -22,21 +22,17 @@ class LiquittableCircle : UIView {
             setup()
         }
     }
-    var color: UIColor = UIColor.red
-    var growColor: UIColor = UIColor.white
+    var color = UIColor(red: 0.5, green: 0.5, blue: 0.5, alpha: 1.0)
 
-    init(center: CGPoint, radius: CGFloat, color: UIColor, growColor: UIColor?) {
+    init(center: CGPoint, radius: CGFloat, color: UIColor) {
         let frame = CGRect(x: center.x - radius, y: center.y - radius, width: 2 * radius, height: 2 * radius)
         self.radius = radius
         self.color = color
-        if growColor != nil {
-            self.growColor = growColor!
-        }
         super.init(frame: frame)
         setup()
     }
 
-    required init?(coder aDecoder: NSCoder) {
+    required init(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
@@ -47,8 +43,8 @@ class LiquittableCircle : UIView {
 
     private func setup() {
         self.frame = CGRect(x: center.x - radius, y: center.y - radius, width: 2 * radius, height: 2 * radius)
-        let bezierPath = UIBezierPath(ovalIn: CGRect(origin: CGPoint(x: 0, y: 0), size: CGSize(width: radius * 2, height: radius * 2)))
-        draw(path: bezierPath)
+        let bezierPath = UIBezierPath(ovalIn: CGRect(origin: CGPoint.zero, size: CGSize(width: radius * 2, height: radius * 2)))
+        draw(path:bezierPath)
     }
 
     func draw(path: UIBezierPath) {
@@ -65,7 +61,7 @@ class LiquittableCircle : UIView {
     
     func grow(isGrow: Bool) {
         if isGrow {
-            grow(self.growColor, radius: self.radius, shininess: 1.6)
+            grow(baseColor: self.color, radius: self.radius, shininess: 1.6)
         } else {
             self.layer.shadowRadius = 0
             self.layer.shadowOpacity = 0
@@ -73,7 +69,7 @@ class LiquittableCircle : UIView {
     }
 
     func circlePoint(rad: CGFloat) -> CGPoint {
-        return CGMath.circlePoint(center, radius: radius, rad: rad)
+        return CGMath.circlePoint(center: center, radius: radius, rad: rad)
     }
 
 }

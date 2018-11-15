@@ -10,28 +10,27 @@ import Foundation
 import UIKit
 
 public enum Effect {
-    case line(UIColor, Int, CGFloat, UIColor?)
-    case circle(UIColor, Int, CGFloat, UIColor?)
-    case growLine(UIColor, Int, CGFloat, UIColor?)
-    case growCircle(UIColor, Int, CGFloat, UIColor?)
+    case Line(UIColor)
+    case Circle(UIColor)
+    case GrowLine(UIColor)
+    case GrowCircle(UIColor)
     
     func setup(loader: LiquidLoader) -> LiquidLoadEffect {
         switch self {
-        case .line(let color, let count, let duration, let growColor):
-            return LiquidLineEffect(loader: loader, color: color, circleCount: count, duration: duration, growColor: growColor)
-        case .circle(let color, let count, let duration, let growColor):
-            return LiquidCircleEffect(loader: loader, color: color, circleCount: count, duration: duration, growColor: growColor)
-        case .growLine(let color, let count, let duration, let growColor):
-            let line = LiquidLineEffect(loader: loader, color: color, circleCount: count, duration: duration, growColor: growColor)
+        case .Line(let color):
+            return LiquidLineEffect(loader: loader, color: color)
+        case .Circle(let color):
+            return LiquidCircleEffect(loader: loader, color: color)
+        case .GrowLine(let color):
+            let line = LiquidLineEffect(loader: loader, color: color)
             line.isGrow = true
             return line
-        case .growCircle(let color,let count, let duration, let growColor):
-            let circle = LiquidCircleEffect(loader: loader, color: color, circleCount: count, duration: duration, growColor: growColor)
+        case .GrowCircle(let color):
+            let circle = LiquidCircleEffect(loader: loader, color: color)
             circle.isGrow = true
             return circle
         }
     }
-
 }
 
 public class LiquidLoader : UIView {
@@ -44,9 +43,9 @@ public class LiquidLoader : UIView {
         self.effectDelegate = self.effect.setup(loader: self)
     }
 
-    public required init?(coder aDecoder: NSCoder) {
-        self.effect = .circle(UIColor.white, 5, 3.0, UIColor.red)
-        super.init(coder: aDecoder)
+    public required init(coder aDecoder: NSCoder) {
+        self.effect = .Circle(UIColor.white)
+        super.init(coder: aDecoder)!
         self.effectDelegate = self.effect.setup(loader: self)
     }
 
@@ -56,13 +55,5 @@ public class LiquidLoader : UIView {
 
     public func hide() {
         self.isHidden = true
-    }
-    
-    override public func didMoveToWindow() {
-        super.didMoveToWindow()
-        if(self.window == nil) {
-            // we were removed.. lets stop everything
-            effectDelegate?.stopTimer()
-        }
     }
 }

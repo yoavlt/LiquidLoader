@@ -11,24 +11,19 @@ import UIKit
 
 class LiquidLoadEffect : NSObject {
 
-    var numberOfCircles: Int
-    var duration: CGFloat
     var circleScale: CGFloat = 1.17
     var moveScale: CGFloat = 0.80
-    var color = UIColor.white
-    var growColor = UIColor.red
-    
+    var color: UIColor = UIColor.white
+
     var engine: SimpleCircleLiquidEngine?
     var moveCircle: LiquittableCircle?
     var shadowCircle: LiquittableCircle?
-    
-    var timer:  CADisplayLink?
 
     weak var loader: LiquidLoader!
     
     var isGrow = false {
         didSet {
-            grow(self.isGrow)
+            grow(isGrow: self.isGrow)
         }
     }
 
@@ -38,19 +33,14 @@ class LiquidLoadEffect : NSObject {
     
     var key: CGFloat = 0.0 {
         didSet {
-            updateKeyframe(self.key)
+            updateKeyframe(key: self.key)
         }
     }
 
-    init(loader: LiquidLoader, color: UIColor, circleCount: Int, duration: CGFloat, growColor: UIColor? = UIColor.red) {
-        self.numberOfCircles = circleCount
-        self.duration = duration
+    init(loader: LiquidLoader, color: UIColor) {
         self.circleRadius = loader.frame.width * 0.05
         self.loader = loader
         self.color = color
-        if growColor != nil {
-            self.growColor = growColor!
-        }
         super.init()
         setup()
     }
@@ -73,20 +63,19 @@ class LiquidLoadEffect : NSObject {
         }
         resize()
 
-        timer = CADisplayLink(target: self, selector: #selector(LiquidLoadEffect.update))
-        timer?.add(to: RunLoop.main, forMode: RunLoopMode.commonModes)
+        let _ = Timer.scheduledTimer(timeInterval: 0.02, target: self, selector: #selector(LiquidLoadEffect.update), userInfo: nil, repeats: true)
     }
     
-    func updateKeyframe(_ key: CGFloat) {
+    func updateKeyframe(key: CGFloat) {
         self.engine?.clear()
-        let movePos = movePosition(key)
+        let movePos = movePosition(key: key)
         
         // move subviews positions
         moveCircle?.center = movePos
         shadowCircle?.center = movePos
         circles.each { circle in
             if self.moveCircle != nil {
-                _ = self.engine?.push(self.moveCircle!, other: circle)
+                let _ = self.engine?.push(circle: self.moveCircle!, other: circle)
             }
         }
         
@@ -94,10 +83,10 @@ class LiquidLoadEffect : NSObject {
 
         // draw and show grow
         if let parent = loader {
-            self.engine?.draw(parent)
+            self.engine?.draw(parent: parent)
         }
         if let shadow = shadowCircle {
-            loader?.bringSubview(toFront: shadow)
+            loader?.bringSubviewToFront(shadow)
         }
     }
 
@@ -105,11 +94,11 @@ class LiquidLoadEffect : NSObject {
         return [] // abstract
     }
 
-    func movePosition(_ key: CGFloat) -> CGPoint {
+    func movePosition(key: CGFloat) -> CGPoint {
         return CGPoint.zero // abstract
     }
 
-    func update() {
+    @objc func update() {
         // abstract
     }
     
@@ -117,9 +106,9 @@ class LiquidLoadEffect : NSObject {
         // abstract
     }
     
-    func grow(_ isGrow: Bool) {
+    func grow(isGrow: Bool) {
         if isGrow {
-            shadowCircle = LiquittableCircle(center: self.moveCircle!.center, radius: self.moveCircle!.radius * 1.0, color: self.color, growColor: growColor)
+            shadowCircle = LiquittableCircle(center: self.moveCircle!.center, radius: self.moveCircle!.radius * 1.0, color: self.color)
             shadowCircle?.isGrow = isGrow
             loader?.addSubview(shadowCircle!)
         } else {
@@ -127,7 +116,4 @@ class LiquidLoadEffect : NSObject {
         }
     }
 
-    func stopTimer() {
-        timer?.invalidate()
-    }
 }

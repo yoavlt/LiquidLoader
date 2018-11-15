@@ -17,7 +17,7 @@ extension CGRect {
     }
     var center: CGPoint {
         get {
-            return origin.plus(rightBottom).mul(0.5)
+            return origin.plus(point: rightBottom).mul(rhs: 0.5)
         }
     }
 }
