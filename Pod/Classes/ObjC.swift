@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-@objc public enum ObjCEffect: Int {
+public enum ObjCEffect: Int {
     case line
     case circle
     case growLine
@@ -18,7 +18,7 @@ import UIKit
 
 extension LiquidLoader {
     
-    @objc public convenience init(frame: CGRect, effect: ObjCEffect, color: UIColor, numberOfCircle: Int, duration: CGFloat, growColor: UIColor? = UIColor.red) {
+   public convenience init(frame: CGRect, effect: ObjCEffect, color: UIColor, numberOfCircle: Int, duration: CGFloat, growColor: UIColor? = UIColor.red) {
         var s: Effect
         
         if effect == .line {

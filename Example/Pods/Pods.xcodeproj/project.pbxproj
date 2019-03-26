@@ -7,118 +7,121 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0CA163551D3496F76C23A61415FDC4EE /* Pods-LiquidLoader_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E6E52F97E257719B3967CC4A8964103 /* Pods-LiquidLoader_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		17906F3011D1B9786DAAC07A35CE0027 /* LiquidCircleEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A216DC6789F243C5558920114930607 /* LiquidCircleEffect.swift */; };
-		20FD442F22264FF0B94D52AE265716DF /* Pods-LiquidLoader_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CB85F05E045BA694107FA1EBD967268F /* Pods-LiquidLoader_Example-dummy.m */; };
-		2662F346FCD13029427E9E4F60692D24 /* LiquidUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494AAB833567E609B1E7F4869A44AFB1 /* LiquidUtil.swift */; };
-		279D138255F4E9322AF803C6795D1F2A /* Pods-LiquidLoader_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AE358E869AAA1EA2CCDCC214C2EAD851 /* Pods-LiquidLoader_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3895BD033DDEAA1ACF4F0D45A787C49E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		40BD8ECC739580C9CE2BF9FCAD63CA8C /* UIView+Grow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6609D2A039CA263A9766D35B98B9DD /* UIView+Grow.swift */; };
-		417AE24DB1B2F4B5C741161FD4F6A6F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		4C3F4162E8FAAC1A60DC67A9AA989C58 /* LiquittableCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C25062055F0FCABABD6CE0534E1B9E /* LiquittableCircle.swift */; };
-		55AA1F33A5C4AB3E524EB1F47513FACB /* SimpleCircleLiquidEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC29F748E46CD366CF12A3592E8FB38 /* SimpleCircleLiquidEngine.swift */; };
-		59F91D045CE79112F494C51BA800458C /* LiquidLoader-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6808A5B4FD3100612EDA64BBE75E94 /* LiquidLoader-dummy.m */; };
-		69757A1D47E1CC2102E43D78DDD5161E /* LiquidLoadEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612BF9A151CC27D32C1D3BC5121947E5 /* LiquidLoadEffect.swift */; };
-		77397297DAE9EB50258A5ABFF5623169 /* ArrayEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD844B017296E87FFBC21C208DBA35A /* ArrayEx.swift */; };
-		8F5C6F72419D973E0507F110AFDBA99B /* LiquidLineEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6BE8DB9915032C56627EDDE1FBEC0E /* LiquidLineEffect.swift */; };
-		A0345120767716E37AC8C62DCEBE11EA /* LiquidLoader-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FDE14FE961B87B6CE27112E822876199 /* LiquidLoader-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AF97D892BDE05ABBF3544EA1599B9890 /* CGPointEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC33D15C2A5F606B8327704ADCB3E862 /* CGPointEx.swift */; };
-		B45A7DD64FD9A22F5117BB77C4F90884 /* CircularGradientLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C8A3A29F3992831A33EC6BD0E1CA17 /* CircularGradientLayer.swift */; };
-		BF1E1962B8FC4506FAFC5CD01DC55EA2 /* UIColorEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26E0FBDAF5AF116F3D91F1D128DCA9E /* UIColorEx.swift */; };
-		D29EF38F9E2D22A8F1150865153FBF8B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		DD890FE0B9FDF2964345062F9887ABF1 /* LiquidLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FF35115C7671E0E0570E3F8D6B34AC /* LiquidLoader.swift */; };
-		EFD4E07B46FD3DA0802F53697F903AA4 /* CGRectEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA90A7C03B8EA3074A3ED23CCC27854 /* CGRectEx.swift */; };
-		F0AE2A8ED5A09BDE6E693E3DD56CC624 /* Pods-LiquidLoader_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A46DD68CD67CA4ACA1147BC541906DA0 /* Pods-LiquidLoader_Tests-dummy.m */; };
-		F908A08DBBC2B77F485D2C12DB53C374 /* ObjC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1E09FCF58001D422927A77435EC06A /* ObjC.swift */; };
+		00C61EE45A04E29A983CC25CA51BED8C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
+		05E5551A500B2D98DBCF4BE8F6FDADB7 /* LiquidLoader-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EBDE347856A574CAC7AF49359476A8E /* LiquidLoader-dummy.m */; };
+		1FAC0A5BA75E7D9A8B0914C9E9518DD7 /* Pods-LiquidLoader_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 870AF1E8E4884135555797019557BAB8 /* Pods-LiquidLoader_Example-dummy.m */; };
+		23166CBD34581EBEEDD74A2FBD920FCD /* Pods-LiquidLoader_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 89B693FFEA6CE4A3D2F68F2ED2D54F64 /* Pods-LiquidLoader_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		267A5870A5C6587FA386BF7339C5861C /* LiquidCircleEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9CCFA1E8C00FE37BDB8BACF7D94085 /* LiquidCircleEffect.swift */; };
+		2752E7AFF6B430EA2EAAA3FC0925F9FF /* LiquidLoadEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B645D1EE89AA5FD06ED884FF34C158E /* LiquidLoadEffect.swift */; };
+		36A763806770CF5DB01D311EA37532E8 /* LiquidUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A5C1CBC04CD859A3D901D086A247E7 /* LiquidUtil.swift */; };
+		42ACC3B7D4596D3E849EAC561BFACBBB /* LiquittableCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F6E427CC9C6589D2E6A328FF9F63A1 /* LiquittableCircle.swift */; };
+		4F8CA31EFCE3370481500F8106B161C6 /* Pods-LiquidLoader_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C7304F8A991703048811B5A400F23A /* Pods-LiquidLoader_Tests-dummy.m */; };
+		526DBFA743E4C9894C5228569CA692EE /* CGPointEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CE056C3AB8EBFD690E11ECD2AAEE53 /* CGPointEx.swift */; };
+		585F9DBEF06DC6A726FCC4D30B3D2190 /* CGRectEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF8F20D684500A044401EB886F5D51A /* CGRectEx.swift */; };
+		5CEE5959C4C2D3FC208423F6E523506A /* LiquidLoader-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 39CF51BE1FC313E748E0EF43129FB619 /* LiquidLoader-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		698B239FD7E2CCB35005E4D4F25A92BD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
+		7F40F5D844A0D36DF5FDE11358377CDF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
+		9388BA2F628C8EE6A0539572862ACFF1 /* ArrayEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66BDF85813E4E550809DAC22F662BC78 /* ArrayEx.swift */; };
+		9C593192DB0A53E7617E9C7073D9AF48 /* ObjC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F5C743E40BCA1BDC562410398D3D83 /* ObjC.swift */; };
+		A9F377379149D6EB42CCACDCF4AAE9B7 /* LiquidLineEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7650A1F5BABDF162D961F01016A69EBB /* LiquidLineEffect.swift */; };
+		B49CE8249B457EB5A19BA3C5A284D121 /* UIView+Grow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10DDF5BF9A8A46C1831DB46984EF349 /* UIView+Grow.swift */; };
+		BE5155C06EDA94DDAB645C3BB64C7902 /* Pods-LiquidLoader_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A515D3C1172893AAE0CB7D1747A0E301 /* Pods-LiquidLoader_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C137248EE5891B8B3230F2C61F046CDC /* SimpleCircleLiquidEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944D38903658981215F78CC0935555F1 /* SimpleCircleLiquidEngine.swift */; };
+		C8B4F0B7B8615832496CE2BB6A6E9051 /* LiquidLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CA97B69CEE1E65287EF3C0E4691ACC /* LiquidLoader.swift */; };
+		D3F830B4568C2BB401C0B10DFE1055BD /* CircularGradientLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BDDB8B6A99BFD122E23DDAADEF0C06 /* CircularGradientLayer.swift */; };
+		DF9C4C029753AE84631D7525DFCD02D9 /* UIColorEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D151571543F73DFCB4105D34074458 /* UIColorEx.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3CB2194E506EDDB894F3F7F386B20834 /* PBXContainerItemProxy */ = {
+		2A20DBE64F89678C125FC996F4DA3E6B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2E6C0374BB40928A6293E9F803F11288;
+			remoteGlobalIDString = 719C96008702ACEC4B5539708BCA0F1A;
 			remoteInfo = LiquidLoader;
 		};
-		6F8CA6F2864575EA1AC71A7887DC1238 /* PBXContainerItemProxy */ = {
+		CB2311A873B671B8490DBFB20991DE71 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2E6C0374BB40928A6293E9F803F11288;
+			remoteGlobalIDString = 719C96008702ACEC4B5539708BCA0F1A;
 			remoteInfo = LiquidLoader;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		05B280D9B3CF1398ABEC88F2EAB31B66 /* Pods-LiquidLoader_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LiquidLoader_Tests-resources.sh"; sourceTree = "<group>"; };
-		060BAD9595BC9E563238CDA9021AF787 /* Pods-LiquidLoader_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LiquidLoader_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		0A93AD132C4E6C0C41157DFE25855F31 /* Pods-LiquidLoader_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-LiquidLoader_Example.modulemap"; sourceTree = "<group>"; };
-		0AD844B017296E87FFBC21C208DBA35A /* ArrayEx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ArrayEx.swift; sourceTree = "<group>"; };
-		0D6609D2A039CA263A9766D35B98B9DD /* UIView+Grow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+Grow.swift"; sourceTree = "<group>"; };
-		11C25062055F0FCABABD6CE0534E1B9E /* LiquittableCircle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LiquittableCircle.swift; sourceTree = "<group>"; };
+		01C7304F8A991703048811B5A400F23A /* Pods-LiquidLoader_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LiquidLoader_Tests-dummy.m"; sourceTree = "<group>"; };
+		03C85939E7CEEEF796A0BD99E0C176C7 /* Pods-LiquidLoader_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LiquidLoader_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		04F6E427CC9C6589D2E6A328FF9F63A1 /* LiquittableCircle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LiquittableCircle.swift; path = Pod/Classes/LiquittableCircle.swift; sourceTree = "<group>"; };
+		06CA0E91CE5C3AB88084A2959643BFEE /* Pods-LiquidLoader_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LiquidLoader_Tests.modulemap"; sourceTree = "<group>"; };
+		06CE056C3AB8EBFD690E11ECD2AAEE53 /* CGPointEx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CGPointEx.swift; path = Pod/Classes/CGPointEx.swift; sourceTree = "<group>"; };
+		08753C3FBA398AAB41AF9125675520CE /* Pods-LiquidLoader_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LiquidLoader_Example-resources.sh"; sourceTree = "<group>"; };
+		18EB05E55A8AD439575DE6385F7B90AA /* LiquidLoader.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LiquidLoader.modulemap; sourceTree = "<group>"; };
+		19CBB108DB8E2BB8D29F0DFD9E3B49EC /* Pods-LiquidLoader_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LiquidLoader_Tests-resources.sh"; sourceTree = "<group>"; };
 		1E805DA6E0F2074F82F71A7EC11296E3 /* Pods_LiquidLoader_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LiquidLoader_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		22E04FA4D464C854794101BCF9F1F638 /* Pods-LiquidLoader_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LiquidLoader_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		2ABE5BD98D4A02AB3B3E1F8260064A5D /* Pods_LiquidLoader_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LiquidLoader_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3E6808A5B4FD3100612EDA64BBE75E94 /* LiquidLoader-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LiquidLoader-dummy.m"; sourceTree = "<group>"; };
-		44D7029640EE13E21DFA8329C87A96A6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		494AAB833567E609B1E7F4869A44AFB1 /* LiquidUtil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LiquidUtil.swift; sourceTree = "<group>"; };
-		4D24BE69DF64A5DDBF5B9784D6546C35 /* Pods-LiquidLoader_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LiquidLoader_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		4E6E52F97E257719B3967CC4A8964103 /* Pods-LiquidLoader_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LiquidLoader_Tests-umbrella.h"; sourceTree = "<group>"; };
-		612BF9A151CC27D32C1D3BC5121947E5 /* LiquidLoadEffect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LiquidLoadEffect.swift; sourceTree = "<group>"; };
-		66C0AF920D100F4F046F08B0E0160E52 /* LiquidLoader.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = LiquidLoader.modulemap; sourceTree = "<group>"; };
-		6C9C456E042425FD0AAA04035BA7A8B9 /* Pods-LiquidLoader_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LiquidLoader_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		74D8964242CC9B5EE7760826EADB8774 /* Pods-LiquidLoader_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LiquidLoader_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		75C8A3A29F3992831A33EC6BD0E1CA17 /* CircularGradientLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CircularGradientLayer.swift; sourceTree = "<group>"; };
-		7892C3050F72DE3B3B8AA6389FAF2F67 /* Pods-LiquidLoader_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LiquidLoader_Example-resources.sh"; sourceTree = "<group>"; };
-		7A216DC6789F243C5558920114930607 /* LiquidCircleEffect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LiquidCircleEffect.swift; sourceTree = "<group>"; };
-		7FA90A7C03B8EA3074A3ED23CCC27854 /* CGRectEx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CGRectEx.swift; sourceTree = "<group>"; };
-		83941EE4B8AA124DE0DC9D929410A4F3 /* Pods-LiquidLoader_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LiquidLoader_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		2CE2A979EE99BE59D7B362875052DDAA /* Pods-LiquidLoader_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LiquidLoader_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		39CF51BE1FC313E748E0EF43129FB619 /* LiquidLoader-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LiquidLoader-umbrella.h"; sourceTree = "<group>"; };
+		407CFEFCB61C84C97412C66A99E83CB2 /* Pods-LiquidLoader_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LiquidLoader_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		440AD486CC4B0AA48846696BBFB5012B /* Pods-LiquidLoader_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LiquidLoader_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		4E02F274DDC75AF81FD2867D59AB4258 /* Pods-LiquidLoader_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LiquidLoader_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		5104D134A499790A911C0741D5DEF126 /* LiquidLoader.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = LiquidLoader.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		58D151571543F73DFCB4105D34074458 /* UIColorEx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIColorEx.swift; path = Pod/Classes/UIColorEx.swift; sourceTree = "<group>"; };
+		5EC22E5C79F466592F818B76754CAB97 /* Pods-LiquidLoader_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LiquidLoader_Example-frameworks.sh"; sourceTree = "<group>"; };
+		614E30F99B561622A1536656B1BE9863 /* LiquidLoader.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LiquidLoader.xcconfig; sourceTree = "<group>"; };
+		66BDF85813E4E550809DAC22F662BC78 /* ArrayEx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ArrayEx.swift; path = Pod/Classes/ArrayEx.swift; sourceTree = "<group>"; };
+		6B5A677E6660225164FD3732B3844907 /* Pods-LiquidLoader_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LiquidLoader_Example.modulemap"; sourceTree = "<group>"; };
+		7650A1F5BABDF162D961F01016A69EBB /* LiquidLineEffect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LiquidLineEffect.swift; path = Pod/Classes/LiquidLineEffect.swift; sourceTree = "<group>"; };
+		76EB0FFBE6B79ED4B4F5BAC9CAA69A9F /* Pods-LiquidLoader_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LiquidLoader_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		7A34146109136914B2EAF05F68215A32 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B645D1EE89AA5FD06ED884FF34C158E /* LiquidLoadEffect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LiquidLoadEffect.swift; path = Pod/Classes/LiquidLoadEffect.swift; sourceTree = "<group>"; };
+		7FF8F20D684500A044401EB886F5D51A /* CGRectEx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CGRectEx.swift; path = Pod/Classes/CGRectEx.swift; sourceTree = "<group>"; };
+		82CA97B69CEE1E65287EF3C0E4691ACC /* LiquidLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LiquidLoader.swift; path = Pod/Classes/LiquidLoader.swift; sourceTree = "<group>"; };
+		870AF1E8E4884135555797019557BAB8 /* Pods-LiquidLoader_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LiquidLoader_Example-dummy.m"; sourceTree = "<group>"; };
+		89B693FFEA6CE4A3D2F68F2ED2D54F64 /* Pods-LiquidLoader_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LiquidLoader_Example-umbrella.h"; sourceTree = "<group>"; };
+		90BDDB8B6A99BFD122E23DDAADEF0C06 /* CircularGradientLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CircularGradientLayer.swift; path = Pod/Classes/CircularGradientLayer.swift; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		99FF35115C7671E0E0570E3F8D6B34AC /* LiquidLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LiquidLoader.swift; sourceTree = "<group>"; };
-		9C5B81241C442D23766DE3F9DF1236F2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9FC29F748E46CD366CF12A3592E8FB38 /* SimpleCircleLiquidEngine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SimpleCircleLiquidEngine.swift; sourceTree = "<group>"; };
-		A46DD68CD67CA4ACA1147BC541906DA0 /* Pods-LiquidLoader_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LiquidLoader_Tests-dummy.m"; sourceTree = "<group>"; };
-		AC33D15C2A5F606B8327704ADCB3E862 /* CGPointEx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CGPointEx.swift; sourceTree = "<group>"; };
-		AE358E869AAA1EA2CCDCC214C2EAD851 /* Pods-LiquidLoader_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LiquidLoader_Example-umbrella.h"; sourceTree = "<group>"; };
-		B5CB0F9EB7805E30638C9D53074FD986 /* Pods-LiquidLoader_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LiquidLoader_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		BF135E40D6155F04CFB5391DC7BF0965 /* LiquidLoader-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LiquidLoader-prefix.pch"; sourceTree = "<group>"; };
-		CB85F05E045BA694107FA1EBD967268F /* Pods-LiquidLoader_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LiquidLoader_Example-dummy.m"; sourceTree = "<group>"; };
-		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		D1F20958BE46DA5196C7D2D100F64DDF /* Pods-LiquidLoader_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LiquidLoader_Example.release.xcconfig"; sourceTree = "<group>"; };
-		D26E0FBDAF5AF116F3D91F1D128DCA9E /* UIColorEx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIColorEx.swift; sourceTree = "<group>"; };
+		944D38903658981215F78CC0935555F1 /* SimpleCircleLiquidEngine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SimpleCircleLiquidEngine.swift; path = Pod/Classes/SimpleCircleLiquidEngine.swift; sourceTree = "<group>"; };
+		9AE8EB7FB58F40950A213D15DDA8BA07 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		9EBDE347856A574CAC7AF49359476A8E /* LiquidLoader-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LiquidLoader-dummy.m"; sourceTree = "<group>"; };
+		A515D3C1172893AAE0CB7D1747A0E301 /* Pods-LiquidLoader_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LiquidLoader_Tests-umbrella.h"; sourceTree = "<group>"; };
+		A52180A99009BE7A4C43CD1EA63AD9E3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A67DFA0443820B9CD567337CC7A4F98B /* LiquidLoader-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LiquidLoader-prefix.pch"; sourceTree = "<group>"; };
+		A6F5C743E40BCA1BDC562410398D3D83 /* ObjC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ObjC.swift; path = Pod/Classes/ObjC.swift; sourceTree = "<group>"; };
+		AC685A06C5FF1CF3539D7F0B22F5C32D /* Pods-LiquidLoader_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LiquidLoader_Example.release.xcconfig"; sourceTree = "<group>"; };
+		AE9CCFA1E8C00FE37BDB8BACF7D94085 /* LiquidCircleEffect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LiquidCircleEffect.swift; path = Pod/Classes/LiquidCircleEffect.swift; sourceTree = "<group>"; };
+		C27A07B63548B528FEA70DCEB9086F7E /* Pods-LiquidLoader_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LiquidLoader_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		D0A56241AD93A479EADA52D228743A23 /* Pods-LiquidLoader_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LiquidLoader_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		D9D992170055F6102646FF157183CD3E /* LiquidLoader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LiquidLoader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EA476A5D2E1B68734278E00167005B6C /* Pods-LiquidLoader_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LiquidLoader_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		EF66408B707E3B828E1301C313E9A5CB /* Pods-LiquidLoader_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-LiquidLoader_Tests.modulemap"; sourceTree = "<group>"; };
-		F0252C5FC1B2047F56884EB1D5E6BF5F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F4441D44EDF2D2E113C882E757F5C4CF /* Pods-LiquidLoader_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LiquidLoader_Example-frameworks.sh"; sourceTree = "<group>"; };
-		F82F20EC7ECD48F0E80618C1D65AAD30 /* LiquidLoader.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LiquidLoader.xcconfig; sourceTree = "<group>"; };
-		FB1E09FCF58001D422927A77435EC06A /* ObjC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ObjC.swift; sourceTree = "<group>"; };
-		FD6BE8DB9915032C56627EDDE1FBEC0E /* LiquidLineEffect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LiquidLineEffect.swift; sourceTree = "<group>"; };
-		FDE14FE961B87B6CE27112E822876199 /* LiquidLoader-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LiquidLoader-umbrella.h"; sourceTree = "<group>"; };
+		E10DDF5BF9A8A46C1831DB46984EF349 /* UIView+Grow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Grow.swift"; path = "Pod/Classes/UIView+Grow.swift"; sourceTree = "<group>"; };
+		E7523A2633A983432F147B55463C1D23 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA424FA270677ED0A8A35488338933F4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8A5C1CBC04CD859A3D901D086A247E7 /* LiquidUtil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LiquidUtil.swift; path = Pod/Classes/LiquidUtil.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		023A8D9880EA7233B55FD141545EB645 /* Frameworks */ = {
+		10D60FF0D2D7ED768C61950D19D780E5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D29EF38F9E2D22A8F1150865153FBF8B /* Foundation.framework in Frameworks */,
+				698B239FD7E2CCB35005E4D4F25A92BD /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5955F3CFF7239496096B5687944BA10A /* Frameworks */ = {
+		3348F68B5F5B62B305C8666B7AB665A8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				417AE24DB1B2F4B5C741161FD4F6A6F7 /* Foundation.framework in Frameworks */,
+				7F40F5D844A0D36DF5FDE11358377CDF /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D0EDCFC007BBA43556F70F0F62DB4049 /* Frameworks */ = {
+		FC35672CF2B6A273232E2AD95999BA5F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3895BD033DDEAA1ACF4F0D45A787C49E /* Foundation.framework in Frameworks */,
+				00C61EE45A04E29A983CC25CA51BED8C /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,176 +138,172 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		067565D3631A367EB095111D3F0518D1 /* Classes */ = {
+		3B364E30607625E29528E4BC65710B4E /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				0AD844B017296E87FFBC21C208DBA35A /* ArrayEx.swift */,
-				AC33D15C2A5F606B8327704ADCB3E862 /* CGPointEx.swift */,
-				7FA90A7C03B8EA3074A3ED23CCC27854 /* CGRectEx.swift */,
-				75C8A3A29F3992831A33EC6BD0E1CA17 /* CircularGradientLayer.swift */,
-				7A216DC6789F243C5558920114930607 /* LiquidCircleEffect.swift */,
-				FD6BE8DB9915032C56627EDDE1FBEC0E /* LiquidLineEffect.swift */,
-				612BF9A151CC27D32C1D3BC5121947E5 /* LiquidLoadEffect.swift */,
-				99FF35115C7671E0E0570E3F8D6B34AC /* LiquidLoader.swift */,
-				494AAB833567E609B1E7F4869A44AFB1 /* LiquidUtil.swift */,
-				11C25062055F0FCABABD6CE0534E1B9E /* LiquittableCircle.swift */,
-				FB1E09FCF58001D422927A77435EC06A /* ObjC.swift */,
-				9FC29F748E46CD366CF12A3592E8FB38 /* SimpleCircleLiquidEngine.swift */,
-				D26E0FBDAF5AF116F3D91F1D128DCA9E /* UIColorEx.swift */,
-				0D6609D2A039CA263A9766D35B98B9DD /* UIView+Grow.swift */,
+				CCEA4E94F8642AE26E8CB69AAA44AED9 /* LiquidLoader */,
 			);
-			path = Classes;
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		23EE8F9491DDDC4A4FFE581188989E1B /* Support Files */ = {
+		44D5347904CF754D6785B84253F2574A /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				F0252C5FC1B2047F56884EB1D5E6BF5F /* Info.plist */,
-				66C0AF920D100F4F046F08B0E0160E52 /* LiquidLoader.modulemap */,
-				F82F20EC7ECD48F0E80618C1D65AAD30 /* LiquidLoader.xcconfig */,
-				3E6808A5B4FD3100612EDA64BBE75E94 /* LiquidLoader-dummy.m */,
-				BF135E40D6155F04CFB5391DC7BF0965 /* LiquidLoader-prefix.pch */,
-				FDE14FE961B87B6CE27112E822876199 /* LiquidLoader-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/LiquidLoader";
-			sourceTree = "<group>";
-		};
-		3546AD6A006DCB833282D9BF928D0A09 /* LiquidLoader */ = {
-			isa = PBXGroup;
-			children = (
-				A1DB407253E988FC67801CD7E4C20D1B /* Pod */,
-				23EE8F9491DDDC4A4FFE581188989E1B /* Support Files */,
-			);
-			name = LiquidLoader;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
+				D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		6EBDF1A8765C432644DAC8E621CCD564 /* Development Pods */ = {
+		6767B3B983E022C2876852F6C7EAE154 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				3546AD6A006DCB833282D9BF928D0A09 /* LiquidLoader */,
+				9AE8EB7FB58F40950A213D15DDA8BA07 /* LICENSE */,
+				5104D134A499790A911C0741D5DEF126 /* LiquidLoader.podspec */,
+				A52180A99009BE7A4C43CD1EA63AD9E3 /* README.md */,
 			);
-			name = "Development Pods";
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		6E834846D216120B7FEFC53D2927F3E1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7A34146109136914B2EAF05F68215A32 /* Info.plist */,
+				18EB05E55A8AD439575DE6385F7B90AA /* LiquidLoader.modulemap */,
+				614E30F99B561622A1536656B1BE9863 /* LiquidLoader.xcconfig */,
+				9EBDE347856A574CAC7AF49359476A8E /* LiquidLoader-dummy.m */,
+				A67DFA0443820B9CD567337CC7A4F98B /* LiquidLoader-prefix.pch */,
+				39CF51BE1FC313E748E0EF43129FB619 /* LiquidLoader-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/LiquidLoader";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				6EBDF1A8765C432644DAC8E621CCD564 /* Development Pods */,
+				3B364E30607625E29528E4BC65710B4E /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
 				012E1E7E8970ACCFBFDB75CE73DA7ED4 /* Products */,
 				C76AACF3E6B3B11A57C4150198C494CC /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		A1DB407253E988FC67801CD7E4C20D1B /* Pod */ = {
+		7E7695A0D7EE55F8A9B64B908A492631 /* Pods-LiquidLoader_Tests */ = {
 			isa = PBXGroup;
 			children = (
-				067565D3631A367EB095111D3F0518D1 /* Classes */,
-			);
-			path = Pod;
-			sourceTree = "<group>";
-		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		BD9BF3505DA87DD19EB6C55BF4D0F17B /* Pods-LiquidLoader_Example */ = {
-			isa = PBXGroup;
-			children = (
-				9C5B81241C442D23766DE3F9DF1236F2 /* Info.plist */,
-				0A93AD132C4E6C0C41157DFE25855F31 /* Pods-LiquidLoader_Example.modulemap */,
-				060BAD9595BC9E563238CDA9021AF787 /* Pods-LiquidLoader_Example-acknowledgements.markdown */,
-				74D8964242CC9B5EE7760826EADB8774 /* Pods-LiquidLoader_Example-acknowledgements.plist */,
-				CB85F05E045BA694107FA1EBD967268F /* Pods-LiquidLoader_Example-dummy.m */,
-				F4441D44EDF2D2E113C882E757F5C4CF /* Pods-LiquidLoader_Example-frameworks.sh */,
-				7892C3050F72DE3B3B8AA6389FAF2F67 /* Pods-LiquidLoader_Example-resources.sh */,
-				AE358E869AAA1EA2CCDCC214C2EAD851 /* Pods-LiquidLoader_Example-umbrella.h */,
-				22E04FA4D464C854794101BCF9F1F638 /* Pods-LiquidLoader_Example.debug.xcconfig */,
-				D1F20958BE46DA5196C7D2D100F64DDF /* Pods-LiquidLoader_Example.release.xcconfig */,
-			);
-			name = "Pods-LiquidLoader_Example";
-			path = "Target Support Files/Pods-LiquidLoader_Example";
-			sourceTree = "<group>";
-		};
-		C76AACF3E6B3B11A57C4150198C494CC /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				BD9BF3505DA87DD19EB6C55BF4D0F17B /* Pods-LiquidLoader_Example */,
-				DA7718A9753C7B6DF07EDA938EFCB199 /* Pods-LiquidLoader_Tests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		DA7718A9753C7B6DF07EDA938EFCB199 /* Pods-LiquidLoader_Tests */ = {
-			isa = PBXGroup;
-			children = (
-				44D7029640EE13E21DFA8329C87A96A6 /* Info.plist */,
-				EF66408B707E3B828E1301C313E9A5CB /* Pods-LiquidLoader_Tests.modulemap */,
-				4D24BE69DF64A5DDBF5B9784D6546C35 /* Pods-LiquidLoader_Tests-acknowledgements.markdown */,
-				83941EE4B8AA124DE0DC9D929410A4F3 /* Pods-LiquidLoader_Tests-acknowledgements.plist */,
-				A46DD68CD67CA4ACA1147BC541906DA0 /* Pods-LiquidLoader_Tests-dummy.m */,
-				B5CB0F9EB7805E30638C9D53074FD986 /* Pods-LiquidLoader_Tests-frameworks.sh */,
-				05B280D9B3CF1398ABEC88F2EAB31B66 /* Pods-LiquidLoader_Tests-resources.sh */,
-				4E6E52F97E257719B3967CC4A8964103 /* Pods-LiquidLoader_Tests-umbrella.h */,
-				EA476A5D2E1B68734278E00167005B6C /* Pods-LiquidLoader_Tests.debug.xcconfig */,
-				6C9C456E042425FD0AAA04035BA7A8B9 /* Pods-LiquidLoader_Tests.release.xcconfig */,
+				EA424FA270677ED0A8A35488338933F4 /* Info.plist */,
+				06CA0E91CE5C3AB88084A2959643BFEE /* Pods-LiquidLoader_Tests.modulemap */,
+				2CE2A979EE99BE59D7B362875052DDAA /* Pods-LiquidLoader_Tests-acknowledgements.markdown */,
+				440AD486CC4B0AA48846696BBFB5012B /* Pods-LiquidLoader_Tests-acknowledgements.plist */,
+				01C7304F8A991703048811B5A400F23A /* Pods-LiquidLoader_Tests-dummy.m */,
+				C27A07B63548B528FEA70DCEB9086F7E /* Pods-LiquidLoader_Tests-frameworks.sh */,
+				19CBB108DB8E2BB8D29F0DFD9E3B49EC /* Pods-LiquidLoader_Tests-resources.sh */,
+				A515D3C1172893AAE0CB7D1747A0E301 /* Pods-LiquidLoader_Tests-umbrella.h */,
+				03C85939E7CEEEF796A0BD99E0C176C7 /* Pods-LiquidLoader_Tests.debug.xcconfig */,
+				D0A56241AD93A479EADA52D228743A23 /* Pods-LiquidLoader_Tests.release.xcconfig */,
 			);
 			name = "Pods-LiquidLoader_Tests";
 			path = "Target Support Files/Pods-LiquidLoader_Tests";
 			sourceTree = "<group>";
 		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44D5347904CF754D6785B84253F2574A /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C76AACF3E6B3B11A57C4150198C494CC /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F6024F89EEA8EFCC7B354D4F50A59F07 /* Pods-LiquidLoader_Example */,
+				7E7695A0D7EE55F8A9B64B908A492631 /* Pods-LiquidLoader_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CCEA4E94F8642AE26E8CB69AAA44AED9 /* LiquidLoader */ = {
+			isa = PBXGroup;
+			children = (
+				66BDF85813E4E550809DAC22F662BC78 /* ArrayEx.swift */,
+				06CE056C3AB8EBFD690E11ECD2AAEE53 /* CGPointEx.swift */,
+				7FF8F20D684500A044401EB886F5D51A /* CGRectEx.swift */,
+				90BDDB8B6A99BFD122E23DDAADEF0C06 /* CircularGradientLayer.swift */,
+				AE9CCFA1E8C00FE37BDB8BACF7D94085 /* LiquidCircleEffect.swift */,
+				7650A1F5BABDF162D961F01016A69EBB /* LiquidLineEffect.swift */,
+				7B645D1EE89AA5FD06ED884FF34C158E /* LiquidLoadEffect.swift */,
+				82CA97B69CEE1E65287EF3C0E4691ACC /* LiquidLoader.swift */,
+				F8A5C1CBC04CD859A3D901D086A247E7 /* LiquidUtil.swift */,
+				04F6E427CC9C6589D2E6A328FF9F63A1 /* LiquittableCircle.swift */,
+				A6F5C743E40BCA1BDC562410398D3D83 /* ObjC.swift */,
+				944D38903658981215F78CC0935555F1 /* SimpleCircleLiquidEngine.swift */,
+				58D151571543F73DFCB4105D34074458 /* UIColorEx.swift */,
+				E10DDF5BF9A8A46C1831DB46984EF349 /* UIView+Grow.swift */,
+				6767B3B983E022C2876852F6C7EAE154 /* Pod */,
+				6E834846D216120B7FEFC53D2927F3E1 /* Support Files */,
+			);
+			name = LiquidLoader;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		F6024F89EEA8EFCC7B354D4F50A59F07 /* Pods-LiquidLoader_Example */ = {
+			isa = PBXGroup;
+			children = (
+				E7523A2633A983432F147B55463C1D23 /* Info.plist */,
+				6B5A677E6660225164FD3732B3844907 /* Pods-LiquidLoader_Example.modulemap */,
+				407CFEFCB61C84C97412C66A99E83CB2 /* Pods-LiquidLoader_Example-acknowledgements.markdown */,
+				4E02F274DDC75AF81FD2867D59AB4258 /* Pods-LiquidLoader_Example-acknowledgements.plist */,
+				870AF1E8E4884135555797019557BAB8 /* Pods-LiquidLoader_Example-dummy.m */,
+				5EC22E5C79F466592F818B76754CAB97 /* Pods-LiquidLoader_Example-frameworks.sh */,
+				08753C3FBA398AAB41AF9125675520CE /* Pods-LiquidLoader_Example-resources.sh */,
+				89B693FFEA6CE4A3D2F68F2ED2D54F64 /* Pods-LiquidLoader_Example-umbrella.h */,
+				76EB0FFBE6B79ED4B4F5BAC9CAA69A9F /* Pods-LiquidLoader_Example.debug.xcconfig */,
+				AC685A06C5FF1CF3539D7F0B22F5C32D /* Pods-LiquidLoader_Example.release.xcconfig */,
+			);
+			name = "Pods-LiquidLoader_Example";
+			path = "Target Support Files/Pods-LiquidLoader_Example";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		09A9A7688B5A5CBB24DF722A74A34D84 /* Headers */ = {
+		0E01A5D86B45A8962A5B929A4CA7D216 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				279D138255F4E9322AF803C6795D1F2A /* Pods-LiquidLoader_Example-umbrella.h in Headers */,
+				5CEE5959C4C2D3FC208423F6E523506A /* LiquidLoader-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5F38F582D1A4048575484AFCAF501061 /* Headers */ = {
+		2B9D0455D3B140E7DF12AD21C6B3586B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0345120767716E37AC8C62DCEBE11EA /* LiquidLoader-umbrella.h in Headers */,
+				23166CBD34581EBEEDD74A2FBD920FCD /* Pods-LiquidLoader_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		606A4B7FD8322E52ED55AB2810785ADC /* Headers */ = {
+		CC46D166D3AC29B8DC19AD03088A4478 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0CA163551D3496F76C23A61415FDC4EE /* Pods-LiquidLoader_Tests-umbrella.h in Headers */,
+				BE5155C06EDA94DDAB645C3BB64C7902 /* Pods-LiquidLoader_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		2E6C0374BB40928A6293E9F803F11288 /* LiquidLoader */ = {
+		719C96008702ACEC4B5539708BCA0F1A /* LiquidLoader */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A3B307FBDE68D743D11CB66FC72225D3 /* Build configuration list for PBXNativeTarget "LiquidLoader" */;
+			buildConfigurationList = F85D680EE85C6B6B4297D429706CB2DD /* Build configuration list for PBXNativeTarget "LiquidLoader" */;
 			buildPhases = (
-				313CDDB898EAA6481E3EB82A9BF9619B /* Sources */,
-				D0EDCFC007BBA43556F70F0F62DB4049 /* Frameworks */,
-				5F38F582D1A4048575484AFCAF501061 /* Headers */,
+				0E01A5D86B45A8962A5B929A4CA7D216 /* Headers */,
+				365133CB76ABC2A319640A56ABB1B582 /* Sources */,
+				FC35672CF2B6A273232E2AD95999BA5F /* Frameworks */,
+				1204BC2565DE22B1271BD31D2E9F3FEA /* Resources */,
 			);
 			buildRules = (
 			);
@@ -315,40 +314,42 @@
 			productReference = D9D992170055F6102646FF157183CD3E /* LiquidLoader.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		8FFCCF9690C681EED1BF209718EFB0FA /* Pods-LiquidLoader_Example */ = {
+		A5F24E4191AD16ACE07E636ACFBB89A3 /* Pods-LiquidLoader_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E259A7C41B6F0EE28D2289B05F0C063B /* Build configuration list for PBXNativeTarget "Pods-LiquidLoader_Example" */;
+			buildConfigurationList = 1CB860313B2B0934F38B41ADE3B75091 /* Build configuration list for PBXNativeTarget "Pods-LiquidLoader_Tests" */;
 			buildPhases = (
-				65309363AC491F31035BD574C03C1291 /* Sources */,
-				023A8D9880EA7233B55FD141545EB645 /* Frameworks */,
-				09A9A7688B5A5CBB24DF722A74A34D84 /* Headers */,
+				CC46D166D3AC29B8DC19AD03088A4478 /* Headers */,
+				7B2228A0348EE8128EE3500FFBBFC4D3 /* Sources */,
+				3348F68B5F5B62B305C8666B7AB665A8 /* Frameworks */,
+				EDD8071A9B07E59933ACEBF46B43C140 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A2398DF7A7A44EA6BCBF015C9806614F /* PBXTargetDependency */,
-			);
-			name = "Pods-LiquidLoader_Example";
-			productName = "Pods-LiquidLoader_Example";
-			productReference = 1E805DA6E0F2074F82F71A7EC11296E3 /* Pods_LiquidLoader_Example.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		EA69F8E90E99A827BBBCE1C6DF231C37 /* Pods-LiquidLoader_Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 026259067CE5C7BC95ABC232265B5FB1 /* Build configuration list for PBXNativeTarget "Pods-LiquidLoader_Tests" */;
-			buildPhases = (
-				2400A601137139C844E77FB0311123C5 /* Sources */,
-				5955F3CFF7239496096B5687944BA10A /* Frameworks */,
-				606A4B7FD8322E52ED55AB2810785ADC /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				BA762BFA4A1A6B654A6FF5EA3071BD92 /* PBXTargetDependency */,
+				69EDF5CADF91AE142C989C434B4B9FA2 /* PBXTargetDependency */,
 			);
 			name = "Pods-LiquidLoader_Tests";
 			productName = "Pods-LiquidLoader_Tests";
 			productReference = 2ABE5BD98D4A02AB3B3E1F8260064A5D /* Pods_LiquidLoader_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AB61A117081C6E9D6F551932CD71A5A3 /* Pods-LiquidLoader_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C0EEF4B446EBFC228C64CAE95B53EEA /* Build configuration list for PBXNativeTarget "Pods-LiquidLoader_Example" */;
+			buildPhases = (
+				2B9D0455D3B140E7DF12AD21C6B3586B /* Headers */,
+				7C38A0DA3CBCD30587E72204D22DC8B1 /* Sources */,
+				10D60FF0D2D7ED768C61950D19D780E5 /* Frameworks */,
+				CEB1F3B2534043490789ABCF3C9AF929 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5C48FCA71BAAD83DCA0EFBAB3A715E69 /* PBXTargetDependency */,
+			);
+			name = "Pods-LiquidLoader_Example";
+			productName = "Pods-LiquidLoader_Example";
+			productReference = 1E805DA6E0F2074F82F71A7EC11296E3 /* Pods_LiquidLoader_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -357,17 +358,11 @@
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0830;
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
 				TargetAttributes = {
-					2E6C0374BB40928A6293E9F803F11288 = {
-						LastSwiftMigration = 0820;
-					};
-					8FFCCF9690C681EED1BF209718EFB0FA = {
-						LastSwiftMigration = 0830;
-					};
-					EA69F8E90E99A827BBBCE1C6DF231C37 = {
-						LastSwiftMigration = 0830;
+					719C96008702ACEC4B5539708BCA0F1A = {
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -383,304 +378,166 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2E6C0374BB40928A6293E9F803F11288 /* LiquidLoader */,
-				8FFCCF9690C681EED1BF209718EFB0FA /* Pods-LiquidLoader_Example */,
-				EA69F8E90E99A827BBBCE1C6DF231C37 /* Pods-LiquidLoader_Tests */,
+				719C96008702ACEC4B5539708BCA0F1A /* LiquidLoader */,
+				AB61A117081C6E9D6F551932CD71A5A3 /* Pods-LiquidLoader_Example */,
+				A5F24E4191AD16ACE07E636ACFBB89A3 /* Pods-LiquidLoader_Tests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		1204BC2565DE22B1271BD31D2E9F3FEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEB1F3B2534043490789ABCF3C9AF929 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDD8071A9B07E59933ACEBF46B43C140 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		2400A601137139C844E77FB0311123C5 /* Sources */ = {
+		365133CB76ABC2A319640A56ABB1B582 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F0AE2A8ED5A09BDE6E693E3DD56CC624 /* Pods-LiquidLoader_Tests-dummy.m in Sources */,
+				9388BA2F628C8EE6A0539572862ACFF1 /* ArrayEx.swift in Sources */,
+				526DBFA743E4C9894C5228569CA692EE /* CGPointEx.swift in Sources */,
+				585F9DBEF06DC6A726FCC4D30B3D2190 /* CGRectEx.swift in Sources */,
+				D3F830B4568C2BB401C0B10DFE1055BD /* CircularGradientLayer.swift in Sources */,
+				267A5870A5C6587FA386BF7339C5861C /* LiquidCircleEffect.swift in Sources */,
+				A9F377379149D6EB42CCACDCF4AAE9B7 /* LiquidLineEffect.swift in Sources */,
+				2752E7AFF6B430EA2EAAA3FC0925F9FF /* LiquidLoadEffect.swift in Sources */,
+				05E5551A500B2D98DBCF4BE8F6FDADB7 /* LiquidLoader-dummy.m in Sources */,
+				C8B4F0B7B8615832496CE2BB6A6E9051 /* LiquidLoader.swift in Sources */,
+				36A763806770CF5DB01D311EA37532E8 /* LiquidUtil.swift in Sources */,
+				42ACC3B7D4596D3E849EAC561BFACBBB /* LiquittableCircle.swift in Sources */,
+				9C593192DB0A53E7617E9C7073D9AF48 /* ObjC.swift in Sources */,
+				C137248EE5891B8B3230F2C61F046CDC /* SimpleCircleLiquidEngine.swift in Sources */,
+				DF9C4C029753AE84631D7525DFCD02D9 /* UIColorEx.swift in Sources */,
+				B49CE8249B457EB5A19BA3C5A284D121 /* UIView+Grow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		313CDDB898EAA6481E3EB82A9BF9619B /* Sources */ = {
+		7B2228A0348EE8128EE3500FFBBFC4D3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77397297DAE9EB50258A5ABFF5623169 /* ArrayEx.swift in Sources */,
-				AF97D892BDE05ABBF3544EA1599B9890 /* CGPointEx.swift in Sources */,
-				EFD4E07B46FD3DA0802F53697F903AA4 /* CGRectEx.swift in Sources */,
-				B45A7DD64FD9A22F5117BB77C4F90884 /* CircularGradientLayer.swift in Sources */,
-				17906F3011D1B9786DAAC07A35CE0027 /* LiquidCircleEffect.swift in Sources */,
-				8F5C6F72419D973E0507F110AFDBA99B /* LiquidLineEffect.swift in Sources */,
-				69757A1D47E1CC2102E43D78DDD5161E /* LiquidLoadEffect.swift in Sources */,
-				59F91D045CE79112F494C51BA800458C /* LiquidLoader-dummy.m in Sources */,
-				DD890FE0B9FDF2964345062F9887ABF1 /* LiquidLoader.swift in Sources */,
-				2662F346FCD13029427E9E4F60692D24 /* LiquidUtil.swift in Sources */,
-				4C3F4162E8FAAC1A60DC67A9AA989C58 /* LiquittableCircle.swift in Sources */,
-				F908A08DBBC2B77F485D2C12DB53C374 /* ObjC.swift in Sources */,
-				55AA1F33A5C4AB3E524EB1F47513FACB /* SimpleCircleLiquidEngine.swift in Sources */,
-				BF1E1962B8FC4506FAFC5CD01DC55EA2 /* UIColorEx.swift in Sources */,
-				40BD8ECC739580C9CE2BF9FCAD63CA8C /* UIView+Grow.swift in Sources */,
+				4F8CA31EFCE3370481500F8106B161C6 /* Pods-LiquidLoader_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		65309363AC491F31035BD574C03C1291 /* Sources */ = {
+		7C38A0DA3CBCD30587E72204D22DC8B1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20FD442F22264FF0B94D52AE265716DF /* Pods-LiquidLoader_Example-dummy.m in Sources */,
+				1FAC0A5BA75E7D9A8B0914C9E9518DD7 /* Pods-LiquidLoader_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A2398DF7A7A44EA6BCBF015C9806614F /* PBXTargetDependency */ = {
+		5C48FCA71BAAD83DCA0EFBAB3A715E69 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = LiquidLoader;
-			target = 2E6C0374BB40928A6293E9F803F11288 /* LiquidLoader */;
-			targetProxy = 3CB2194E506EDDB894F3F7F386B20834 /* PBXContainerItemProxy */;
+			target = 719C96008702ACEC4B5539708BCA0F1A /* LiquidLoader */;
+			targetProxy = 2A20DBE64F89678C125FC996F4DA3E6B /* PBXContainerItemProxy */;
 		};
-		BA762BFA4A1A6B654A6FF5EA3071BD92 /* PBXTargetDependency */ = {
+		69EDF5CADF91AE142C989C434B4B9FA2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = LiquidLoader;
-			target = 2E6C0374BB40928A6293E9F803F11288 /* LiquidLoader */;
-			targetProxy = 6F8CA6F2864575EA1AC71A7887DC1238 /* PBXContainerItemProxy */;
+			target = 719C96008702ACEC4B5539708BCA0F1A /* LiquidLoader */;
+			targetProxy = CB2311A873B671B8490DBFB20991DE71 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0ACDCBCB0B6796575F46FFA2F5410C6B /* Release */ = {
+		615BF1D9DF6042D215EEE997DBB93A12 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76EB0FFBE6B79ED4B4F5BAC9CAA69A9F /* Pods-LiquidLoader_Example.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		547B6A506D731A063D97C3A49698876A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 22E04FA4D464C854794101BCF9F1F638 /* Pods-LiquidLoader_Example.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-LiquidLoader_Example/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-LiquidLoader_Example/Pods-LiquidLoader_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_LiquidLoader_Example;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		6D3880689C64AD74A95864BDDE736F1C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F82F20EC7ECD48F0E80618C1D65AAD30 /* LiquidLoader.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/LiquidLoader/LiquidLoader-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/LiquidLoader/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/LiquidLoader/LiquidLoader.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = LiquidLoader;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		C08E7646AE1DF8F48151869C7D4547CA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F82F20EC7ECD48F0E80618C1D65AAD30 /* LiquidLoader.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/LiquidLoader/LiquidLoader-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/LiquidLoader/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/LiquidLoader/LiquidLoader.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = LiquidLoader;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		D0F25E1C91871333CC6635C2639CBB8B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D1F20958BE46DA5196C7D2D100F64DDF /* Pods-LiquidLoader_Example.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-LiquidLoader_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-LiquidLoader_Example/Pods-LiquidLoader_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_LiquidLoader_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		D2E42F01A37A34B044DF4175CF546B5B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6C9C456E042425FD0AAA04035BA7A8B9 /* Pods-LiquidLoader_Tests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-LiquidLoader_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-LiquidLoader_Tests/Pods-LiquidLoader_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_LiquidLoader_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		D3E3D092A3FF7311A98E44BBA36FFD12 /* Debug */ = {
+		6C6EACA84DA9A4D8A1E4E2501D3848D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -689,64 +546,269 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		F391E9AFA95F365665747FA2922A23E2 /* Debug */ = {
+		744A87390215BE3EB3E945E610383A08 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EA476A5D2E1B68734278E00167005B6C /* Pods-LiquidLoader_Tests.debug.xcconfig */;
+			baseConfigurationReference = 614E30F99B561622A1536656B1BE9863 /* LiquidLoader.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-LiquidLoader_Tests/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/LiquidLoader/LiquidLoader-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LiquidLoader/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LiquidLoader/LiquidLoader.modulemap";
+				PRODUCT_MODULE_NAME = LiquidLoader;
+				PRODUCT_NAME = LiquidLoader;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9995C7DCFACD5445C87F2A0AFDFA66B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC685A06C5FF1CF3539D7F0B22F5C32D /* Pods-LiquidLoader_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LiquidLoader_Example/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-LiquidLoader_Tests/Pods-LiquidLoader_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MODULEMAP_FILE = "Target Support Files/Pods-LiquidLoader_Example/Pods-LiquidLoader_Example.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_LiquidLoader_Tests;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B6F635A05B89BC12EA7BFF337A04205D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 614E30F99B561622A1536656B1BE9863 /* LiquidLoader.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LiquidLoader/LiquidLoader-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LiquidLoader/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LiquidLoader/LiquidLoader.modulemap";
+				PRODUCT_MODULE_NAME = LiquidLoader;
+				PRODUCT_NAME = LiquidLoader;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
+		BA4BC3F0D71A7F1F0CC03607DEA39F40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03C85939E7CEEEF796A0BD99E0C176C7 /* Pods-LiquidLoader_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LiquidLoader_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LiquidLoader_Tests/Pods-LiquidLoader_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C4C10011E1A94F52AA7B4FFBBE8A5668 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0A56241AD93A479EADA52D228743A23 /* Pods-LiquidLoader_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LiquidLoader_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LiquidLoader_Tests/Pods-LiquidLoader_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D9B851E8D67D359282551F91AF242887 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		026259067CE5C7BC95ABC232265B5FB1 /* Build configuration list for PBXNativeTarget "Pods-LiquidLoader_Tests" */ = {
+		0C0EEF4B446EBFC228C64CAE95B53EEA /* Build configuration list for PBXNativeTarget "Pods-LiquidLoader_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F391E9AFA95F365665747FA2922A23E2 /* Debug */,
-				D2E42F01A37A34B044DF4175CF546B5B /* Release */,
+				615BF1D9DF6042D215EEE997DBB93A12 /* Debug */,
+				9995C7DCFACD5445C87F2A0AFDFA66B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1CB860313B2B0934F38B41ADE3B75091 /* Build configuration list for PBXNativeTarget "Pods-LiquidLoader_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA4BC3F0D71A7F1F0CC03607DEA39F40 /* Debug */,
+				C4C10011E1A94F52AA7B4FFBBE8A5668 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -754,26 +816,17 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D3E3D092A3FF7311A98E44BBA36FFD12 /* Debug */,
-				0ACDCBCB0B6796575F46FFA2F5410C6B /* Release */,
+				6C6EACA84DA9A4D8A1E4E2501D3848D0 /* Debug */,
+				D9B851E8D67D359282551F91AF242887 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A3B307FBDE68D743D11CB66FC72225D3 /* Build configuration list for PBXNativeTarget "LiquidLoader" */ = {
+		F85D680EE85C6B6B4297D429706CB2DD /* Build configuration list for PBXNativeTarget "LiquidLoader" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C08E7646AE1DF8F48151869C7D4547CA /* Debug */,
-				6D3880689C64AD74A95864BDDE736F1C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E259A7C41B6F0EE28D2289B05F0C063B /* Build configuration list for PBXNativeTarget "Pods-LiquidLoader_Example" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				547B6A506D731A063D97C3A49698876A /* Debug */,
-				D0F25E1C91871333CC6635C2639CBB8B /* Release */,
+				B6F635A05B89BC12EA7BFF337A04205D /* Debug */,
+				744A87390215BE3EB3E945E610383A08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
