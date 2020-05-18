@@ -50,19 +50,26 @@ public class LiquidLoader : UIView {
         self.effectDelegate = self.effect.setup(loader: self)
     }
 
+    public var isAnimation: Bool {
+        get { effectDelegate?.isAnimation ?? false }
+        set { newValue ? effectDelegate?.startTimer():effectDelegate?.stopTimer() }
+    }
+    
     public func show() {
         self.isHidden = false
+        isAnimation = true
     }
 
     public func hide() {
         self.isHidden = true
+        isAnimation = false
     }
     
     override public func didMoveToWindow() {
         super.didMoveToWindow()
         if(self.window == nil) {
             // we were removed.. lets stop everything
-            effectDelegate?.stopTimer()
+            isAnimation = false
         }
     }
 }
