@@ -22,6 +22,10 @@ class LiquidLoadEffect : NSObject {
     var moveCircle: LiquittableCircle?
     var shadowCircle: LiquittableCircle?
     
+    var isAnimation: Bool {
+        return timer != nil
+    }
+    
     var timer:  CADisplayLink?
 
     weak var loader: LiquidLoader!
@@ -72,9 +76,6 @@ class LiquidLoadEffect : NSObject {
             loader?.addSubview(moveCircle!)
         }
         resize()
-
-        timer = CADisplayLink(target: self, selector: #selector(LiquidLoadEffect.update))
-        timer?.add(to: RunLoop.main, forMode: RunLoop.Mode.common)
     }
     
     func updateKeyframe(_ key: CGFloat) {
@@ -126,8 +127,16 @@ class LiquidLoadEffect : NSObject {
             shadowCircle?.removeFromSuperview()
         }
     }
+    
+    func startTimer() {
+        guard timer == nil else { return }
+        timer = CADisplayLink(target: self, selector: #selector(LiquidLoadEffect.update))
+        timer?.add(to: RunLoop.main, forMode: RunLoop.Mode.common)
+    }
 
     func stopTimer() {
+        guard timer != nil else { return }
         timer?.invalidate()
+        timer = nil
     }
 }
